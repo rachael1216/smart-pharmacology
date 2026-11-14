@@ -1,0 +1,119 @@
+# 易混药名组：中文/英文字形相近但类别不同
+- id: '01'
+  drugs:
+  - 地西泮
+  - 地昔帕明
+  tip: diazepam(-azepam, 苯二氮䓬) vs desipramine(-pramine, 三环抗抑郁)；中文都以“地”开头
+- id: '02'
+  drugs:
+  - 氯丙嗪
+  - 氯氮平
+  tip: chlorpromazine(-promazine, 典型) vs clozapine(-apine, 非典型，几无锥体外系反应但有粒细胞缺乏)
+- id: '03'
+  drugs:
+  - 氟西汀
+  - 氟马西尼
+  - 氟奋乃静
+  tip: fluoxetine(-oxetine, SSRI) / flumazenil(-azenil, BZ拮抗) / fluphenazine(-phenazine, 吩噻嗪)；“氟”只说明含氟
+- id: '04'
+  drugs:
+  - 链霉素
+  - 链激酶
+  tip: streptomycin(-mycin, 氨基糖苷) vs streptokinase(-kinase, 纤溶)；strepto- 只表示链球菌/链霉菌来源
+- id: '05'
+  drugs:
+  - 依那普利
+  - 依诺肝素
+  tip: enalapril(-pril, ACEI) vs enoxaparin(-parin, 低分子肝素)
+- id: '06'
+  drugs:
+  - 洛伐他汀
+  - 洛哌丁胺
+  tip: lovastatin(-statin) vs loperamide(止泻，外周阿片受体激动)
+- id: '07'
+  drugs:
+  - 丙硫氧嘧啶
+  - 丙戊酸钠
+  - 丙咪嗪
+  tip: propylthiouracil(抗甲状腺) / valproate(抗癫痫) / imipramine(TCA)；“丙”来自丙基等化学基团，无类别意义
+- id: 08
+  drugs:
+  - 丙硫氧嘧啶
+  - 氟尿嘧啶
+  tip: 同为 -uracil：PTU 抗甲状腺（抑制 T4→T3），5-FU 抑制胸苷酸合成酶
+- id: 09
+  drugs:
+  - 亚胺培南
+  - 丙咪嗪
+  tip: imipenem(-penem, 碳青霉烯) vs imipramine(-pramine, TCA)：英文字头 imi- 相同
+- id: '10'
+  drugs:
+  - 卡比多巴
+  - 卡托普利
+  - 卡马西平
+  tip: carbidopa(-dopa) / captopril(-pril) / carbamazepine(-azepine)
+- id: '11'
+  drugs:
+  - 维拉帕米
+  - 硝苯地平
+  tip: verapamil(-pamil, 心脏为主) vs nifedipine(-dipine, 血管为主)；均为 CCB
+- id: '12'
+  drugs:
+  - 胺碘酮
+  - 碘化钾
+  tip: 都含碘：胺碘酮可致甲亢/甲减；碘剂大剂量抑制甲状腺激素释放（术前、甲状腺危象）
+- id: '13'
+  drugs:
+  - 红霉素
+  - 链霉素
+  - 万古霉素
+  - 博来霉素
+  tip: 都叫“霉素”(-mycin)，分属大环内酯 / 氨基糖苷 / 糖肽 / 抗肿瘤——必须按药记类别
+- id: '14'
+  drugs:
+  - 庆大霉素
+  - 阿米卡星
+  - 依替米星
+  tip: gentamicin(-micin)/amikacin(-kacin)/etimicin(-micin) 均为氨基糖苷，中文译名“霉素/米星/卡星”混用
+- id: '15'
+  drugs:
+  - 碘解磷定
+  - 氯解磷定
+  tip: 同为胆碱酯酶复活药；氯解磷定水溶性好、可肌注，首选
+- id: '16'
+  drugs:
+  - 阿托品
+  - 阿米卡星
+  - 阿卡波糖
+  tip: 中文“阿”字头无意义：atropine / amikacin / acarbose
+- id: '17'
+  drugs:
+  - 泼尼松
+  - 泼尼松龙
+  tip: prednisone 需肝 11β-羟化为 prednisolone 才有活性；肝功能不全选泼尼松龙
+- id: '18'
+  drugs:
+  - 甲氧氯普胺
+  - 甲氧苄啶
+  tip: metoclopramide(D2 阻断止吐) vs trimethoprim(TMP, 抑制二氢叶酸还原酶)
+- id: '19'
+  drugs:
+  - 新斯的明
+  - 新霉素
+  tip: neostigmine(-stigmine) vs neomycin(-mycin, 氨基糖苷)
+- id: '20'
+  drugs:
+  - 地高辛
+  - 地尔硫䓬
+  tip: digoxin(强心苷) vs diltiazem(-tiazem, CCB)；合用可加重房室传导阻滞
+- id: '21'
+  drugs:
+  - 普萘洛尔
+  - 普罗帕酮
+  - 普鲁卡因胺
+  tip: propranolol(-olol, β阻断/Ⅱ类) / propafenone(Ⅰc类) / procainamide(Ⅰa类)
+- id: '22'
+  drugs:
+  - 长春新碱
+  - 紫杉醇
+  tip: vin-：抑制微管聚合；-taxel：促进聚合抑制解聚——作用于同一靶点方向相反

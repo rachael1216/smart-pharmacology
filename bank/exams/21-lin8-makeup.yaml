@@ -1,0 +1,108 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 21-lin8-makeup
+  title: 2021级 临床医学（八年制） 药理学 缓考
+  cohort: 2021
+  major: 临床医学（八年制）
+  kind: 缓考
+  source:
+    title: 考试| 21临八 药理（缓）
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247486632&idx=1&sn=77383d842a1646c184752d33194e7256&chksm=c2c27f04f5b5f61245e55fe2a155ce45873f8a93ad8b38ea61286f6247a81e2e5aaf4aff7a47
+    published: '2025-02-13'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释（写出中文和含义）
+  - section: 问答题
+    type: essay
+    header: 大题
+questions:
+- id: 21-lin8-makeup-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: agonist
+  completeness: full
+  answer_ref: [agonist]
+  kp: [agonist]
+  status: draft-ai
+- id: 21-lin8-makeup-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: competitive antagonist
+  completeness: full
+  answer_ref: [competitive_antagonist]
+  analysis: 英文名解：中文名 + 定义 + 曲线特点（平行右移、最大效应不变）。
+  kp: [competitive_antagonist]
+  status: draft-ai
+- id: 21-lin8-makeup-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 半衰期
+  completeness: full
+  answer_ref: [half_life]
+  kp: [half_life]
+  status: draft-ai
+- id: 21-lin8-makeup-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: steady state concentration
+  completeness: full
+  answer_ref: [css]
+  kp: [css]
+  status: draft-ai
+- id: 21-lin8-makeup-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: apparent volume of distribution
+  completeness: full
+  answer_ref: [vd]
+  kp: [vd]
+  status: draft-ai
+- id: 21-lin8-makeup-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: ARB降压机制；ACEI引发无痰性干咳机制
+  completeness: full
+  answer_ref: [raas#ARB（氯沙坦、缬沙坦）, acei_cough]
+  analysis: ARB 降压与 ACEI 干咳两问各自独立作答。
+  kp: [raas, acei_cough]
+  status: draft-ai
+- id: 21-lin8-makeup-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 硝苯地平抗心绞痛机制
+  completeness: topic_only
+  answer_ref: [ccb#硝苯地平抗心绞痛机制]
+  analysis: 四点：扩冠解痉、降后负荷、防钙超载、抗血小板。
+  kp: [ccb, antianginal]
+  status: draft-ai
+- id: 21-lin8-makeup-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 长期大量使用糖皮质激素的不良反应
+  completeness: full
+  answer_ref: [gc_adverse]
+  analysis: 高频题。
+  kp: [gc_adverse]
+  status: draft-ai
+- id: 21-lin8-makeup-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 列举两种喹诺酮类药物，简述抗菌机制以及不良反应
+  completeness: full
+  answer_ref: [quinolones]
+  analysis: 列举诺氟沙星、环丙沙星等；机制 + 不良反应（尤其软骨损害）。
+  kp: [quinolones]
+  status: draft-ai

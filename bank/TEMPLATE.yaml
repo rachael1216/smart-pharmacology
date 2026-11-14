@@ -1,0 +1,38 @@
+# 新考试模板：复制为 bank/exams/<考试id>.yaml 后填写。字段说明见 bank/SCHEMA.md
+exam:
+  id: 25-lin5-final
+  title: 2025级 临床医学（五年制） 药理学 期末
+  cohort: 2025
+  major: 临床医学（五年制）
+  kind: 期末
+  source:
+    title: 考试| 25临五 药理
+    url: https://mp.weixin.qq.com/s?...
+    published: '2027-01-15'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - {section: 名词解释, type: definition, score: 3分×5}
+  - {section: 问答题, type: essay, score: 7分×4}
+  notes: [回忆者备注写这里]
+questions:
+- id: 25-lin5-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 首过消除
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft
+- id: 25-lin5-final-002
+  num: 2
+  section: 单选题
+  type: single_choice
+  stem: 治疗变异型心绞痛首选
+  options: {A: 普萘洛尔, B: 硝苯地平, C: 硝酸甘油, D: 阿司匹林}
+  completeness: full
+  answer: B
+  analysis: 变异型心绞痛由冠脉痉挛引起，首选钙通道阻滞药；β 阻断药可诱发冠脉痉挛，不宜使用。
+  kp: [ccb, antianginal]
+  status: draft

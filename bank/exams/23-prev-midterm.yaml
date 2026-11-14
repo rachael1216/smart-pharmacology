@@ -1,0 +1,168 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 23-prev-midterm
+  title: 2023级 预防医学 药理学 期中
+  cohort: 2023
+  major: 预防医学
+  kind: 期中
+  source:
+    title: 考试| 23预防 药理期中
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247487590&idx=1&sn=3493e8885bb6b375ea2e2ab903350c85&chksm=c2c263caf5b5eadc8530577218d05a097b1361c9cb8ca5715841c16587e445aa24d5bc65070a
+    published: '2025-11-26'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 问答题
+    type: essay
+    score: 2分×8
+    header: 大题（2×8）
+  - section: 名词解释
+    type: definition
+    header: 名词解释（3×8，考含义）
+  - section: 多选题
+    type: multi_choice
+    header: 多选
+  - section: 单选题
+    type: single_choice
+    header: 单选
+  notes: [tips：英语不多，会考名称和机制]
+questions:
+- id: 23-prev-midterm-001
+  num: 1
+  section: 问答题
+  type: essay
+  stem: 病例
+  sub: [普萘洛尔用于治疗有支气管哮喘病史的高血压患者为什么出现了异常症状, 使用β受体阻断药治疗高血压的注意事项]
+  completeness: full
+  answer_ref: [beta_blockers#病例：哮喘患者用普萘洛尔（23预防）]
+  analysis: 病例要点：非选择性 β 阻断药阻断支气管 β₂ 受体诱发哮喘；注意事项按禁忌、选药、剂量、停药、合并症写。
+  kp: [beta_blockers, antiasthma]
+  status: draft-ai
+- id: 23-prev-midterm-002
+  num: 2
+  section: 问答题
+  type: essay
+  stem: 比较地西泮和苯巴比妥的药理作用机制的差异，比较两者治疗失眠的作用特点
+  completeness: full
+  answer_ref: ['cmp:diazepam_vs_phenobarbital']
+  analysis: 机制差异的关键词：“开放频率” vs “开放时间”；治疗失眠比较睡眠结构、安全性、依赖性、肝药酶诱导。
+  kp: [sedative_hypnotics]
+  status: draft-ai
+- id: 23-prev-midterm-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: pKa的中文及含义
+  completeness: full
+  answer_ref: [pKa_ion_trapping]
+  kp: [pKa_ion_trapping]
+  status: draft-ai
+- id: 23-prev-midterm-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 肝肠循环
+  completeness: full
+  answer_ref: [enterohepatic]
+  kp: [enterohepatic]
+  status: draft-ai
+- id: 23-prev-midterm-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: potency
+  completeness: full
+  answer_ref: [potency]
+  kp: [potency]
+  status: draft-ai
+- id: 23-prev-midterm-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: first pass effect
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 23-prev-midterm-007
+  num: 7
+  section: 名词解释
+  type: definition
+  stem: agonist
+  completeness: full
+  answer_ref: [agonist]
+  kp: [agonist]
+  status: draft-ai
+- id: 23-prev-midterm-008
+  num: 8
+  section: 名词解释
+  type: definition
+  stem: t1/2
+  completeness: full
+  answer_ref: [half_life]
+  kp: [half_life]
+  status: draft-ai
+- id: 23-prev-midterm-009
+  num: 9
+  section: 多选题
+  type: multi_choice
+  stem: 人工冬眠合剂
+  completeness: stem_only
+  answer: 氯丙嗪 + 异丙嗪 + 哌替啶
+  kp: [antipsychotics]
+  status: draft-ai
+- id: 23-prev-midterm-010
+  num: 10
+  section: 多选题
+  type: multi_choice
+  stem: 氯丙嗪作用
+  completeness: stem_only
+  answer: 抗精神病、镇吐、调节体温、阻断α受体、阻断M受体、影响内分泌
+  kp: [antipsychotics]
+  status: draft-ai
+- id: 23-prev-midterm-011
+  num: 11
+  section: 多选题
+  type: multi_choice
+  stem: 主动转运特点
+  completeness: stem_only
+  answer: 逆浓度梯度；耗能；需载体；有饱和性；有竞争性抑制
+  kp: [transport]
+  status: draft-ai
+- id: 23-prev-midterm-012
+  num: 12
+  section: 单选题
+  type: single_choice
+  stem: 计算表观分布容积
+  completeness: stem_only
+  answer: Vd = 体内药量/血药浓度（D/C₀）
+  kp: [vd]
+  status: draft-ai
+- id: 23-prev-midterm-013
+  num: 13
+  section: 单选题
+  type: single_choice
+  stem: 碱性尿液，弱酸性药物
+  completeness: stem_only
+  answer: 解离增多，重吸收减少，排泄加快
+  kp: [pKa_ion_trapping]
+  status: draft-ai
+- id: 23-prev-midterm-014
+  num: 14
+  section: 单选题
+  type: single_choice
+  stem: pD2
+  completeness: stem_only
+  answer: pD₂ = −lgKD，亲和力指数，越大亲和力越大
+  kp: [affinity_KD]
+  status: draft-ai
+- id: 23-prev-midterm-015
+  num: 15
+  section: 单选题
+  type: single_choice
+  stem: 非竞争性拮抗药对量效曲线的影响
+  completeness: stem_only
+  answer: 激动药量效曲线右移，最大效应降低
+  kp: [competitive_antagonist]
+  status: draft-ai

@@ -1,0 +1,111 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 21-lin5-final
+  title: 2021级 临床医学（五年制） 药理学 期末
+  cohort: 2021
+  major: 临床医学（五年制）
+  kind: 期末
+  source:
+    title: 考试| 21临五 药理期末
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247486376&idx=1&sn=9b4796644592d6335dcf32edd711766f&chksm=c2c27804f5b5f112d1352fbb1aad4d5658b00a4c16652e8b01a86dcd8ba2b32dbc5390138781
+    published: '2024-12-30'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释（都是总论的）
+  - section: 问答题
+    type: essay
+    header: 大题
+  - section: 选择题
+    type: choice
+    header: 选择
+  notes: [有个心律失常药，会导致胸片异常（间质性肺炎），判断是胺碘酮]
+questions:
+- id: 21-lin5-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: pA2
+  completeness: full
+  answer_ref: [pA2]
+  kp: [pA2]
+  status: draft-ai
+- id: 21-lin5-final-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: bioavailability
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 21-lin5-final-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 酶诱导剂
+  completeness: full
+  answer_ref: [enzyme_inducer]
+  kp: [enzyme_inducer]
+  status: draft-ai
+- id: 21-lin5-final-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 表观分布容积
+  completeness: full
+  answer_ref: [vd]
+  kp: [vd]
+  status: draft-ai
+- id: 21-lin5-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 效价强度
+  completeness: full
+  answer_ref: [potency]
+  kp: [potency]
+  status: draft-ai
+- id: 21-lin5-final-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: 维拉帕米和腺苷的药理作用（原来室上速首选维拉帕米，现在开始用腺苷了，说说两者的药理作用、区别，为什么腺苷好）
+  completeness: full
+  answer_ref: ['cmp:verapamil_vs_adenosine']
+  analysis: 题目追问“为什么腺苷好”：起效快、t₁/₂ 极短、无负性肌力、对心功能不全者安全。
+  kp: [antiarrhythmics, ccb]
+  status: draft-ai
+- id: 21-lin5-final-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 强心苷不良反应
+  completeness: topic_only
+  answer_ref: [cardiac_glycosides#不良反应, cardiac_glycosides#中毒防治]
+  analysis: 同 23 临五缓考。
+  kp: [cardiac_glycosides]
+  status: draft-ai
+- id: 21-lin5-final-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 糖皮质激素的不良反应
+  completeness: topic_only
+  answer_ref: [gc_adverse]
+  analysis: 高频题。
+  kp: [gc_adverse]
+  status: draft-ai
+- id: 21-lin5-final-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 抗生素治疗性用药原则
+  completeness: topic_only
+  answer_ref: [antibiotic_principles]
+  analysis: 本届首次考查用药原则。
+  kp: [antibiotic_principles]
+  status: draft-ai

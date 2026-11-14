@@ -1,0 +1,16 @@
+# 版权资料与本机索引（只在本机）
+reference/textbook/*
+!reference/textbook/.gitkeep
+reference/lecture/*
+!reference/lecture/.gitkeep
+reference/local/*
+!reference/local/.gitkeep
+reference/index/
+*.pdf
+# 导出产物
+exports/
+# 环境
+__pycache__/
+.venv/
+.DS_Store
+node_modules/

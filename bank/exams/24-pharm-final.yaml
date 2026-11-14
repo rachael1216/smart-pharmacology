@@ -1,0 +1,282 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 24-pharm-final
+  title: 2024级 药学 药理学 期末
+  cohort: 2024
+  major: 药学
+  kind: 期末
+  source:
+    title: 考试| 24药学 药理学
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247488652&idx=2&sn=e0a7696ec7108ddfe66b0bd477cf0fe8&chksm=c2c26720f5b5ee36c9c6a9183fc08cbef748c0203bba087fb1510d5a3949c1b3e14f99b2d229
+    published: '2026-06-29'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    score: 2分×8
+    header: 一、名词解释（2*8）
+  - section: 填空题
+    type: fill_blank
+    score: 1分×23
+    header: 二、填空题（1*23）
+  - section: 选择题
+    type: choice
+    score: 1分×33
+    header: 三、选择题（1*33）
+  - section: 简答题
+    type: short_answer
+    score: 4分×7
+    header: 四、简答题（4*7）
+  notes: [建议多刷医考帮]
+questions:
+- id: 24-pharm-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 后遗效应
+  completeness: full
+  answer_ref: [residual_effect]
+  kp: [residual_effect]
+  status: draft-ai
+- id: 24-pharm-final-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: 受体反向激动药
+  completeness: full
+  answer_ref: [inverse_agonist]
+  kp: [inverse_agonist]
+  status: draft-ai
+- id: 24-pharm-final-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 离子障现象
+  completeness: full
+  answer_ref: [pKa_ion_trapping]
+  kp: [pKa_ion_trapping]
+  status: draft-ai
+- id: 24-pharm-final-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 首剂效应
+  completeness: full
+  answer_ref: [first_dose_effect]
+  kp: [first_dose_effect]
+  status: draft-ai
+- id: 24-pharm-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 停药反应
+  completeness: full
+  answer_ref: [withdrawal_reaction]
+  kp: [withdrawal_reaction]
+  status: draft-ai
+- id: 24-pharm-final-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: 二重感染
+  completeness: full
+  answer_ref: [superinfection]
+  kp: [superinfection]
+  status: draft-ai
+- id: 24-pharm-final-007
+  num: 7
+  section: 名词解释
+  type: definition
+  stem: 负性频率作用
+  completeness: full
+  answer: 负性频率作用：治疗量强心苷使心功能不全患者心率减慢的作用。机制：①增强心肌收缩力、增加心输出量，经颈动脉窦/主动脉弓压力感受器反射性降低交感张力、增强迷走张力；②直接增敏窦房结对乙酰胆碱的反应。心率减慢延长舒张期，有利于冠脉灌流和静脉回流。
+  answer_ref: [cardiac_glycosides#药理作用]
+  analysis: 名解。负性频率作用指强心苷减慢心率的作用。
+  kp: [cardiac_glycosides]
+  status: draft-ai
+- id: 24-pharm-final-008
+  num: 8
+  section: 名词解释
+  type: definition
+  stem: 固有耐药性
+  completeness: full
+  answer_ref: [resistance]
+  kp: [resistance]
+  status: draft-ai
+- id: 24-pharm-final-009
+  num: 9
+  section: 填空题
+  type: fill_blank
+  stem: 新药临床前药理研究包括：药效学研究、a.______、b.______和c.______。
+  completeness: full
+  answer: a.一般（安全）药理学研究 b.药代动力学研究 c.毒理学研究
+  analysis: 第一空存疑，见 kp.preclinical
+  kp: [preclinical]
+  status: draft-ai
+- id: 24-pharm-final-010
+  num: 10
+  section: 填空题
+  type: fill_blank
+  stem: 某药物的半衰期为12h，ED₅₀为2mg/kg，LD₅₀为200mg/kg，则该药的治疗指数为d.______。口服和静脉注射该药，血药浓度-时间曲线下面积（AUC）分别为400、500，则该药的绝对生物利用度为e.______。若每次给药100mg，每日两次，则需要经历f.______才能达到稳态血药浓度。为了使患者快速达到稳态，首次使用剂量为g.______。
+  completeness: full
+  answer: d.100 e.80% f.约60 h（5个t₁/₂，2.5天） g.200 mg
+  analysis: TI=LD₅₀/ED₅₀；F=400/500；给药间隔=t₁/₂时负荷量=2×维持量
+  kp: [median_dose, therapeutic_index, bioavailability, auc, half_life, css, loading_dose]
+  status: draft-ai
+- id: 24-pharm-final-011
+  num: 11
+  section: 填空题
+  type: fill_blank
+  stem: 利多卡因在心肌细胞动作电位4相抑制h.______内流和促进i.______外流，从而发挥抗心律失常作用。
+  completeness: full
+  answer: h.Na⁺ i.K⁺
+  analysis: Ⅰb类：降低浦肯野纤维自律性
+  kp: [antiarrhythmics]
+  status: draft-ai
+- id: 24-pharm-final-012
+  num: 12
+  section: 填空题
+  type: fill_blank
+  stem: 卡托普利通过抑制j.______的活性来减少血管紧张素Ⅱ的生成，并且能够通过抑制降解来升高k.______水平。
+  completeness: full
+  answer: j.血管紧张素转化酶（ACE） k.缓激肽
+  kp: [raas]
+  status: draft-ai
+- id: 24-pharm-final-013
+  num: 13
+  section: 填空题
+  type: fill_blank
+  stem: 硝酸甘油临床首选的给药方式为l.______。
+  completeness: full
+  answer: l.舌下含服
+  analysis: 避开首过消除，1~2 min起效
+  kp: [antianginal]
+  status: draft-ai
+- id: 24-pharm-final-014
+  num: 14
+  section: 填空题
+  type: fill_blank
+  stem: 调血脂药阿利西尤单抗主要作用于m.______，抑制胆固醇吸收。
+  completeness: full
+  answer: m.PCSK9
+  analysis: 阿利西尤单抗为PCSK9单抗，增加LDL受体；题干“抑制胆固醇吸收”应为依折麦布的机制
+  kp: [lipid]
+  status: draft-ai
+- id: 24-pharm-final-015
+  num: 15
+  section: 填空题
+  type: fill_blank
+  stem: 糖皮质激素的临床主要药理作用广泛，抗炎症作用外，还具有抗n.______作用和抗o.______作用。
+  completeness: full
+  answer: n.毒（抗内毒素） o.休克（另可答：免疫/过敏）
+  analysis: 教材四抗：抗炎、抗毒、抗免疫、抗休克
+  kp: [glucocorticoids]
+  status: draft-ai
+- id: 24-pharm-final-016
+  num: 16
+  section: 填空题
+  type: fill_blank
+  stem: 肝素在体内外均有强大的抗凝血作用，其主要作用于体内p.______，临床常用的给药方式为q.______；香豆素类口服抗凝药属于r.______拮抗剂，其临床常用的给药方式为s.______。
+  completeness: full
+  answer: p.抗凝血酶Ⅲ（AT-Ⅲ） q.静脉注射/皮下注射 r.维生素K s.口服
+  kp: [heparin, coumarins]
+  status: draft-ai
+- id: 24-pharm-final-017
+  num: 17
+  section: 填空题
+  type: fill_blank
+  stem: 多黏菌素属窄谱、慢效抗生素，仅对t.______敏感，尤其是对u.______菌有强大的抗菌作用。
+  completeness: full
+  answer: t.革兰阴性杆菌 u.铜绿假单胞菌
+  kp: [polymyxins]
+  status: draft-ai
+- id: 24-pharm-final-018
+  num: 18
+  section: 填空题
+  type: fill_blank
+  stem: 部分抗恶性肿瘤药物通过影响细胞有丝分裂的微管功能来发挥作用，其中长春新碱的作用机制是使微管v.______，而紫杉醇的作用机制则是使微管w.______。
+  completeness: full
+  answer: v.聚合受抑制（不能形成纺锤丝） w.聚合并稳定、不能解聚
+  kp: [anticancer]
+  status: draft-ai
+- id: 24-pharm-final-019
+  num: 19
+  section: 简答题
+  type: short_answer
+  stem: 简述下列现象的药理机制
+  sub:
+  - 青霉素过敏时引起的低血压的可用肾上腺素解救，而氯丙嗪引起的低血压禁忌使用肾上腺素
+  - 长期单用β受体激动药治疗哮喘一段时间后疗效下降，联用糖皮质激素可延长其作用时间
+  - 服用碳酸氢钠可加速阿司匹林从尿液中排出
+  - 洛哌丁胺和奎尼丁联用时会引起严重的中枢呼吸抑制。
+  completeness: full
+  answer_ref:
+  - adr_reversal#现象解释（24药学简答）
+  - glucocorticoids#与β₂激动药合用
+  - pKa_ion_trapping#评分要点
+  - drug_interaction#洛哌丁胺+奎尼丁（24药学）
+  analysis: 四个小问分别对应：肾上腺素升压作用翻转（α 阻断）、β₂ 受体下调与糖皮质激素的允许/增敏作用、离子障与尿液 pH、P-gp 抑制使外周阿片药入脑。每问 1 分，写出机制关键词即可得分。
+  kp: [adr_reversal, glucocorticoids, antiasthma, pKa_ion_trapping, drug_interaction]
+  status: draft-ai
+- id: 24-pharm-final-020
+  num: 20
+  section: 简答题
+  type: short_answer
+  stem: 解救急性有机磷酸酯类中毒时，为什么必须同时使用阿托品和碘解磷定？
+  completeness: full
+  answer_ref: [op_poisoning#为何必须合用, op_poisoning#解毒药及机制]
+  analysis: 核心：阿托品只对 M 样症状有效、不能复活酶；解磷定复活 AChE 并缓解 N 样症状，但对 M 样症状弱。作用互补。
+  kp: [op_poisoning, atropine]
+  status: draft-ai
+- id: 24-pharm-final-021
+  num: 21
+  section: 简答题
+  type: short_answer
+  stem: 举出一速效利尿药，并简述其主要作用位点、分子机制和临床应用。
+  completeness: full
+  answer_ref: [loop_diuretics#作用机制, loop_diuretics#临床应用]
+  analysis: 举呋塞米即可。作用位点“髓袢升支粗段”、分子靶点“Na⁺-K⁺-2Cl⁻ 同向转运体”是必得分点。
+  kp: [loop_diuretics]
+  status: draft-ai
+- id: 24-pharm-final-022
+  num: 22
+  section: 简答题
+  type: short_answer
+  stem: 简述沙库巴曲缬沙坦治疗心力衰竭的药理学机制。
+  completeness: full
+  answer_ref: [arni#作用机制]
+  analysis: 两个组分分开写：沙库巴曲 → 抑制脑啡肽酶 → 利钠肽↑；缬沙坦 → 阻断 AT₁。最后写协同与“不可与 ACEI 合用”。
+  kp: [arni, raas, heart_failure]
+  status: draft-ai
+- id: 24-pharm-final-023
+  num: 23
+  section: 简答题
+  type: short_answer
+  stem: 简述胰岛素的降血糖作用机制及其主要的临床应用指征。
+  completeness: full
+  answer_ref: [insulin#作用机制, insulin#临床应用指征]
+  analysis: 机制写受体酪氨酸激酶→IRS→PI3K/Akt→GLUT4 转位；应用指征 5 条中 1 型糖尿病与急性并发症最重要。
+  kp: [insulin]
+  status: draft-ai
+- id: 24-pharm-final-024
+  num: 24
+  section: 简答题
+  type: short_answer
+  stem: 简述喹诺酮类抗菌药物的抗菌机制。
+  completeness: full
+  answer_ref: [quinolones#作用机制]
+  analysis: G⁻ 主要靶点 DNA 回旋酶，G⁺ 主要靶点拓扑异构酶Ⅳ，区分清楚可得满分。
+  kp: [quinolones]
+  status: draft-ai
+- id: 24-pharm-final-025
+  num: 25
+  section: 简答题
+  type: short_answer
+  stem: 什么是周期非特异性抗肿瘤药和周期特异性抗肿瘤药？请各举出2例。
+  completeness: full
+  answer_ref: ['cmp:cell_cycle']
+  analysis: 定义 + 各举 2 例。CCNSA 例：环磷酰胺、顺铂；CCSA 例：甲氨蝶呤（S 期）、长春新碱（M 期）。
+  kp: [anticancer]
+  status: draft-ai

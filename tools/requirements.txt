@@ -1,0 +1,4 @@
+pyyaml>=6.0
+openpyxl>=3.1      # export.py xlsx
+python-docx>=1.1   # rag.py 读取 .docx 讲义（可选）
+python-pptx>=0.6   # rag.py 读取 .pptx 讲义（可选）

@@ -1,0 +1,185 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 23-lin5-makeup-c
+  title: 2023级 临床医学（五年制） 药理学C 缓考
+  cohort: 2023
+  major: 临床医学（五年制）
+  kind: 缓考
+  variant: C
+  source:
+    title: 考试| 23临五 药理学C（缓）
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247488195&idx=1&sn=89ce348b08009bae8cd0f32eb82ad016&chksm=c2c2616ff5b5e87948daabe64b7a50fba5fa4d0a375f5009c5fcd158932a5aead0caa4fb2531
+    published: '2026-03-01'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 多选题
+    type: multi_choice
+    header: 多选
+  - section: 名词解释
+    type: definition
+    header: 名词解释
+  - section: 问答题
+    type: essay
+    header: 大题
+  notes: [tips：单选题抗生素的不良反应考得挺多的]
+questions:
+- id: 23-lin5-makeup-c-001
+  num: 1
+  section: 多选题
+  type: multi_choice
+  stem: 维拉帕米的药理作用
+  options:
+    A: 抑制钙离子通道
+    B: 抑制钾离子通道
+    C: 抑制窦房结自律性
+    D: 减慢房室结传导
+    E: 延长窦房结和房室结的ERP
+  completeness: stem_with_hint
+  answer: 抑制钙离子通道；抑制窦房结自律性；减慢房室结传导；延长窦房结和房室结ERP
+  analysis: “抑制钾通道”非其主要作用
+  kp: [ccb, antiarrhythmics]
+  status: draft-ai
+- id: 23-lin5-makeup-c-002
+  num: 2
+  section: 多选题
+  type: multi_choice
+  stem: 硝普钠的作用
+  options:
+    A: 扩张小动脉静脉
+    B: 治疗急性高血压脑病
+    C: 治疗难治性心力衰竭
+    D: 起效快持久
+    E: 久用有硫氰化物沉积
+  completeness: stem_with_hint
+  answer: 扩张小动脉静脉；治疗急性高血压脑病；治疗难治性心力衰竭；久用有硫氰化物蓄积
+  analysis: 起效快但作用短暂，“持久”错
+  kp: [antihypertensives_other, heart_failure]
+  status: draft-ai
+- id: 23-lin5-makeup-c-003
+  num: 3
+  section: 多选题
+  type: multi_choice
+  stem: 氨基糖苷类药物不良反应
+  completeness: stem_only
+  answer: 耳毒性、肾毒性、神经肌肉阻滞、过敏反应
+  kp: [aminoglycosides]
+  status: draft-ai
+- id: 23-lin5-makeup-c-004
+  num: 4
+  section: 多选题
+  type: multi_choice
+  stem: 影响细菌核酸代谢
+  recall: 有一个选项 乙胺嘧啶
+  completeness: stem_with_hint
+  answer: 喹诺酮类、利福平（及按口径：乙胺嘧啶通过叶酸代谢间接影响）
+  analysis: 见 kp.antibacterial_mechanisms
+  kp: [antibacterial_mechanisms, sulfonamides]
+  status: draft-ai
+- id: 23-lin5-makeup-c-005
+  num: 5
+  section: 多选题
+  type: multi_choice
+  stem: 引起高尿酸的利尿药
+  completeness: stem_only
+  answer: 噻嗪类、呋塞米（袢利尿药）
+  kp: [diuretics_general]
+  status: draft-ai
+- id: 23-lin5-makeup-c-006
+  num: 6
+  section: 多选题
+  type: multi_choice
+  stem: ACEI和AT1阻断药的异同
+  recall: 阻断循环RAAS/阻断局部RAAS
+  completeness: stem_with_hint
+  answer: 两者均可阻断循环和局部RAAS
+  analysis: 区别：ACEI增加缓激肽，ARB直接阻断AT₁
+  kp: [raas]
+  status: draft-ai
+- id: 23-lin5-makeup-c-007
+  num: 7
+  section: 名词解释
+  type: definition
+  stem: 效能
+  completeness: full
+  answer_ref: [efficacy]
+  kp: [efficacy]
+  status: draft-ai
+- id: 23-lin5-makeup-c-008
+  num: 8
+  section: 名词解释
+  type: definition
+  stem: 半衰期
+  completeness: full
+  answer_ref: [half_life]
+  kp: [half_life]
+  status: draft-ai
+- id: 23-lin5-makeup-c-009
+  num: 9
+  section: 名词解释
+  type: definition
+  stem: 首过效应
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 23-lin5-makeup-c-010
+  num: 10
+  section: 名词解释
+  type: definition
+  stem: 阻断蛋白质合成的抗生素
+  completeness: full
+  answer_ref: ['cmp:antibacterial_targets']
+  analysis: 按 30S / 50S 分类列举即可。
+  kp: [antibacterial_mechanisms, aminoglycosides, tetracyclines, macrolides]
+  status: draft-ai
+- id: 23-lin5-makeup-c-011
+  num: 11
+  section: 名词解释
+  type: definition
+  stem: 拮抗药
+  completeness: full
+  answer_ref: [antagonist]
+  kp: [antagonist]
+  status: draft-ai
+- id: 23-lin5-makeup-c-012
+  num: 12
+  section: 问答题
+  type: essay
+  stem: 强心苷不良反应
+  completeness: topic_only
+  answer_ref: [cardiac_glycosides#不良反应, cardiac_glycosides#中毒防治]
+  analysis: 心脏毒性、胃肠道、神经与视觉三类；加写防治可得满分。
+  kp: [cardiac_glycosides]
+  status: draft-ai
+- id: 23-lin5-makeup-c-013
+  num: 13
+  section: 问答题
+  type: essay
+  stem: 长期大量糖皮质激素不良反应
+  completeness: full
+  answer_ref: [gc_adverse]
+  analysis: 高频大题（历年 ≥7 次）。分“长期用药”和“停药反应”两大类写。
+  kp: [gc_adverse]
+  status: draft-ai
+- id: 23-lin5-makeup-c-014
+  num: 14
+  section: 问答题
+  type: essay
+  stem: 四环素应用抗菌谱
+  completeness: topic_only
+  answer_ref: [tetracyclines#四环素抗菌谱, tetracyclines#临床应用]
+  analysis: 抗菌谱突出“立克次体、支原体、衣原体、螺旋体”；应用写首选适应证。
+  kp: [tetracyclines]
+  status: draft-ai
+- id: 23-lin5-makeup-c-015
+  num: 15
+  section: 问答题
+  type: essay
+  stem: 钙通道阻滞药对心肌和血管平滑肌的作用及分类
+  completeness: full
+  answer_ref: [ccb#分类, ccb#对心肌, ccb#对血管平滑肌]
+  analysis: 分类按化学结构；作用分心肌（负性肌力/频率/传导）与血管平滑肌（扩动脉为主）。
+  kp: [ccb]
+  status: draft-ai

@@ -1,0 +1,26 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r tools/requirements.txt
+      - name: 数据校验
+        run: python tools/bank.py check
+      - name: 单元测试
+        run: python -m unittest discover tests
+      - name: docs/ 是否已更新
+        run: |
+          python tools/bank.py docs
+          git diff --exit-code docs/ || (echo "::error::docs/ 未更新：请运行 python tools/bank.py docs 并提交" && exit 1)
+      - name: 导出全部格式
+        run: |
+          sudo apt-get install -y pandoc
+          python tools/export.py all
+          python tools/export.py docx --mode key --merge
+          python tools/export.py docx --mode paper --merge
+      - uses: actions/upload-artifact@v4
+        with: { name: pharm-bank-exports, path: exports }

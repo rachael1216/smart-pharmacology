@@ -1,0 +1,138 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 23-nurs-midterm
+  title: 2023级 护理学 药理学 期中
+  cohort: 2023
+  major: 护理学
+  kind: 期中
+  source:
+    title: 考试| 23护理 药理期中
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247486734&idx=1&sn=487c1ff14ea9c9cc5d3fe41eef97897f&chksm=c2c27ea2f5b5f7b47506c2001af9d550a999d3ed383da9abb849984b692d433d1bd9baba551a
+    published: '2025-04-20'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释
+  - section: 选择题
+    type: choice
+    header: 选择（单选25*2＋多选8*2）
+  - section: 问答题
+    type: essay
+    header: 大题
+questions:
+- id: 23-nurs-midterm-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 主动转运的特点
+  completeness: full
+  answer_ref: [transport]
+  kp: [transport]
+  status: draft-ai
+- id: 23-nurs-midterm-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: 生物利用度定义及临床意义
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 23-nurs-midterm-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 首过消除（英文）
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 23-nurs-midterm-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: KD定义及药理学意义
+  completeness: full
+  answer_ref: [affinity_KD]
+  kp: [affinity_KD]
+  status: draft-ai
+- id: 23-nurs-midterm-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 肝药酶抑制剂及临床意义
+  completeness: full
+  answer_ref: [enzyme_inhibitor]
+  kp: [enzyme_inhibitor]
+  status: draft-ai
+- id: 23-nurs-midterm-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: 半衰期定义
+  completeness: full
+  answer_ref: [half_life]
+  kp: [half_life]
+  status: draft-ai
+- id: 23-nurs-midterm-007
+  num: 7
+  section: 名词解释
+  type: definition
+  stem: 一级动力学消除需要几个半衰期
+  completeness: full
+  answer: 约 5 个半衰期（消除约 97%）。
+  answer_ref: [first_order]
+  analysis: 一级动力学单次给药约经 5 个 t₁/₂ 体内药物基本消除（约 97%）。
+  kp: [first_order, half_life]
+  status: draft-ai
+- id: 23-nurs-midterm-008
+  num: 8
+  section: 选择题
+  type: choice
+  stem: 东莨菪碱主要作用
+  completeness: stem_only
+  answer: 抑制腺体分泌、中枢镇静、抗晕动病、抗帕金森
+  kp: [atropine]
+  status: draft-ai
+- id: 23-nurs-midterm-009
+  num: 9
+  section: 选择题
+  type: choice
+  stem: 轻度抑郁伴失眠首选
+  completeness: stem_only
+  answer: 苯二氮䓬类（如阿普唑仑）或镇静作用较强的抗抑郁药（如多塞平/米氮平）
+  analysis: 回忆不全，按授课口径确认
+  kp: [sedative_hypnotics]
+  status: draft-ai
+- id: 23-nurs-midterm-010
+  num: 10
+  section: 选择题
+  type: choice
+  stem: 阿司匹林小剂量抑制血栓机制
+  completeness: stem_only
+  answer: 不可逆抑制血小板COX-1，减少TXA₂生成
+  kp: [nsaids, antiplatelet]
+  status: draft-ai
+- id: 23-nurs-midterm-011
+  num: 11
+  section: 问答题
+  type: essay
+  stem: 肾上腺素是过敏性休克的首选药的药理学依据
+  completeness: full
+  answer_ref: [anaphylactic_shock]
+  analysis: 同 24 护理期中。
+  kp: [anaphylactic_shock]
+  status: draft-ai
+- id: 23-nurs-midterm-012
+  num: 12
+  section: 问答题
+  type: essay
+  stem: 吗啡和阿司匹林的镇痛不同，从药理作用，用途，不良反应说明
+  completeness: full
+  answer_ref: ['cmp:morphine_vs_aspirin']
+  analysis: 按题目要求从“药理作用、用途、不良反应”三维度比较，表格作答最清楚。
+  kp: [opioids, nsaids]
+  status: draft-ai

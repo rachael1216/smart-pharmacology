@@ -1,0 +1,108 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 21-lin5-makeup
+  title: 2021级 临床医学（五年制） 药理学 缓考
+  cohort: 2021
+  major: 临床医学（五年制）
+  kind: 缓考
+  source:
+    title: 考试| 21临五 药理（缓）
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247484854&idx=6&sn=5f7f8cd71b4c2782266cb248ac46bb8b&chksm=c2c2761af5b5ff0cca5caaaa87df7398affbf8f9aa8a8e977c426c01a03893b8dc7da08896ea
+    published: '2024-02-27'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释
+  - section: 问答题
+    type: essay
+    header: 大题
+questions:
+- id: 21-lin5-makeup-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 副作用
+  completeness: full
+  answer_ref: [side_effect]
+  kp: [side_effect]
+  status: draft-ai
+- id: 21-lin5-makeup-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: efficacy中文+解释
+  completeness: full
+  answer_ref: [efficacy]
+  kp: [efficacy]
+  status: draft-ai
+- id: 21-lin5-makeup-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 竞争性拮抗药
+  completeness: full
+  answer_ref: [competitive_antagonist]
+  kp: [competitive_antagonist]
+  status: draft-ai
+- id: 21-lin5-makeup-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 酶抑制药
+  completeness: full
+  answer_ref: [enzyme_inhibitor]
+  kp: [enzyme_inhibitor]
+  status: draft-ai
+- id: 21-lin5-makeup-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 生物利用度
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 21-lin5-makeup-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: 呋塞米的药理作用机制和临床应用
+  completeness: full
+  answer_ref: [loop_diuretics#作用机制, loop_diuretics#临床应用]
+  analysis: 高频大题。
+  kp: [loop_diuretics]
+  status: draft-ai
+- id: 21-lin5-makeup-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 卡托普利降压机制和引起咳嗽的原因
+  completeness: full
+  answer_ref: [raas#ACEI降压机制, acei_cough]
+  analysis: 高频大题。
+  kp: [raas, acei_cough]
+  status: draft-ai
+- id: 21-lin5-makeup-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 中年男性，肥胖，2型糖尿病，经饮食控制无效，应选用哪种降糖药物？（A.胰岛素 B.格列本脲 C.甲苯磺丁脲 D.格列齐特 E.二甲双胍），简述其降糖机制和不良反应
+  completeness: full
+  answer: E. 二甲双胍
+  answer_ref: [oral_hypoglycemics#肥胖2型糖尿病选药（21临五缓）, oral_hypoglycemics#二甲双胍]
+  analysis: 选 E。
+  kp: [oral_hypoglycemics]
+  status: draft-ai
+- id: 21-lin5-makeup-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 四环素的临床应用和抗菌谱
+  completeness: full
+  answer_ref: [tetracyclines#四环素抗菌谱, tetracyclines#临床应用]
+  analysis: 高频大题。
+  kp: [tetracyclines]
+  status: draft-ai

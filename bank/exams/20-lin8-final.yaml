@@ -1,0 +1,119 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 20-lin8-final
+  title: 2020级 临床医学（八年制） 药理学 期末
+  cohort: 2020
+  major: 临床医学（八年制）
+  kind: 期末
+  source:
+    title: 考试| 20临八 药理
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247484781&idx=2&sn=89a2350ca350fb42c8f8af980b30a945&chksm=c2c276c1f5b5ffd7529a347f6bc2ea406c74f39d04b15ea55badf93eca026a44839544eb6b95
+    published: '2024-01-08'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释（5个*3）
+  - section: 问答题
+    type: essay
+    header: 大题（5个*6）
+questions:
+- id: 20-lin8-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: therapeutic index
+  completeness: full
+  answer_ref: [therapeutic_index]
+  kp: [therapeutic_index]
+  status: draft-ai
+- id: 20-lin8-final-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: 竞争性拮抗药（英文）
+  completeness: full
+  answer_ref: [competitive_antagonist]
+  analysis: 本题要求写英文：competitive antagonist。
+  kp: [competitive_antagonist]
+  status: draft-ai
+- id: 20-lin8-final-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 表观分布容积
+  completeness: full
+  answer_ref: [vd]
+  kp: [vd]
+  status: draft-ai
+- id: 20-lin8-final-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 零级动力学消除
+  completeness: full
+  answer_ref: [zero_order]
+  kp: [zero_order]
+  status: draft-ai
+- id: 20-lin8-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 稳态血药浓度
+  completeness: full
+  answer_ref: [css]
+  kp: [css]
+  status: draft-ai
+- id: 20-lin8-final-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: 心宁美成分，各自的药理作用，左旋多巴产生外周不良反应的机制
+  completeness: full
+  answer_ref: [antiparkinson#标准答案, antiparkinson#体内过程与机制, antiparkinson#外周不良反应机制]
+  analysis: 心宁美（Sinemet）= 左旋多巴 + 卡比多巴。
+  kp: [antiparkinson]
+  status: draft-ai
+- id: 20-lin8-final-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 吗啡治疗心源性哮喘的机制
+  completeness: full
+  answer_ref: [morphine_cardiac_asthma]
+  analysis: 三点：扩血管减负荷、镇静、降低呼吸中枢对 CO₂ 敏感性。
+  kp: [morphine_cardiac_asthma]
+  status: draft-ai
+- id: 20-lin8-final-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 变异性心绞痛首选药及药理学机制
+  completeness: full
+  answer: 首选钙通道阻滞药（如硝苯地平）。
+  answer_ref: [ccb#硝苯地平抗心绞痛机制]
+  analysis: 变异型心绞痛首选钙通道阻滞药（硝苯地平），β 阻断药不宜。
+  kp: [ccb, antianginal]
+  status: draft-ai
+- id: 20-lin8-final-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: ACEI降血压的机制和导致咳嗽的原因
+  completeness: full
+  answer_ref: [raas#ACEI降压机制, acei_cough]
+  analysis: 高频大题。
+  kp: [raas, acei_cough]
+  status: draft-ai
+- id: 20-lin8-final-010
+  num: 10
+  section: 问答题
+  type: essay
+  stem: 肝素、香豆素类区别
+  completeness: topic_only
+  answer_ref: ['cmp:heparin_vs_warfarin']
+  analysis: 鉴别题。
+  kp: [heparin, coumarins]
+  status: draft-ai

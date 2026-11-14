@@ -1,0 +1,657 @@
+# 构词法：INN 词干（WHO stem book）。regex 用于自动匹配药物英文名；cn 为常见中文译字；pitfalls 为易错提醒
+- id: olol
+  stem: -olol
+  position: suffix
+  regex: olol$
+  cn: 洛尔
+  cls: β受体阻断药
+  mechanism: 阻断β受体
+  pitfalls: 拉贝洛尔 labetalol 同时阻断α、β；普萘洛尔非选择性，美托洛尔β1选择性——词干不区分选择性
+- id: alol
+  stem: -alol
+  position: suffix
+  regex: alol$
+  cn: 洛尔
+  cls: 芳乙醇胺类β受体阻断药（部分兼α阻断）
+  mechanism: 阻断β受体；拉贝洛尔兼阻断α₁
+  pitfalls: labetalol 同时阻断α、β；sotalol 为Ⅲ类抗心律失常药兼β阻断；carvedilol 词干为 -dilol
+- id: azosin
+  stem: -azosin
+  position: suffix
+  regex: azosin$
+  cn: 唑嗪
+  cls: α1受体阻断药
+  mechanism: 选择性阻断α1
+  pitfalls: 首剂效应（首剂低血压）的经典考点：哌唑嗪
+- id: pril
+  stem: -pril
+  position: suffix
+  regex: pril$
+  cn: 普利
+  cls: ACEI
+  mechanism: 抑制血管紧张素转化酶，减少AngⅡ、减少缓激肽降解
+  pitfalls: 干咳、血管神经性水肿与缓激肽有关
+- id: sartan
+  stem: -sartan
+  position: suffix
+  regex: sartan$
+  cn: 沙坦
+  cls: ARB（AT1受体阻断药）
+  mechanism: 阻断AT1受体，不影响缓激肽
+  pitfalls: 不引起干咳——ACEI 干咳患者换用 ARB
+- id: dipine
+  stem: -dipine
+  position: suffix
+  regex: dipine$
+  cn: 地平
+  cls: 二氢吡啶类钙通道阻滞药
+  mechanism: 阻滞L型钙通道，扩张血管为主
+  pitfalls: 维拉帕米/地尔硫䓬不是地平类，对心脏作用强；尼莫地平选择性扩张脑血管
+- id: pamil
+  stem: -pamil
+  position: suffix
+  regex: pamil$
+  cn: 帕米
+  cls: 苯烷胺类钙通道阻滞药
+  mechanism: 抑制心脏（窦房结、房室结）为主
+  pitfalls: 维拉帕米：阵发性室上速首选（传统）
+- id: tiazem
+  stem: -tiazem
+  position: suffix
+  regex: tiazem$
+  cn: 硫䓬
+  cls: 苯硫䓬类钙通道阻滞药
+  mechanism: 心脏与血管作用介于两者之间
+  pitfalls: 地尔硫䓬，中文“䓬”常被写作“卓”
+- id: statin
+  stem: -statin
+  position: suffix
+  regex: vastatin$|statin$
+  cn: 他汀
+  cls: HMG-CoA还原酶抑制药
+  mechanism: 抑制胆固醇合成限速酶
+  pitfalls: 洛伐他汀 vs 洛哌丁胺（止泻）字头相同
+- id: mibe
+  stem: -mibe
+  position: suffix
+  regex: mibe$
+  cn: 麦布
+  cls: 胆固醇吸收抑制药
+  mechanism: 结合小肠刷状缘 NPC1L1
+  pitfalls: 依折麦布 ezetimibe
+- id: cumab
+  stem: -(ci)umab
+  position: suffix
+  regex: cumab$|cimab$
+  cn: 单抗
+  cls: 心血管靶点单抗
+  mechanism: alirocumab：PCSK9 单抗
+  pitfalls: 单抗新命名规则 2021 年后改为 -tug/-bart 等，旧药仍沿用
+- id: mab
+  stem: -mab
+  position: suffix
+  regex: mab$
+  cn: 单抗
+  cls: 单克隆抗体
+  mechanism: -ximab 嵌合、-zumab 人源化、-umab 全人源
+  pitfalls: 英夫利昔单抗 infliximab 为 TNF-α 抑制剂
+- id: cept
+  stem: -cept
+  position: suffix
+  regex: cept$
+  cn: 西普
+  cls: 受体-Fc融合蛋白
+  mechanism: 诱饵受体
+  pitfalls: 依那西普 etanercept：TNF-α 抑制剂
+- id: thiazide
+  stem: -thiazide
+  position: suffix
+  regex: thiazide$
+  cn: 噻嗪
+  cls: 噻嗪类利尿药
+  mechanism: 抑制远曲小管近端 Na⁺-Cl⁻ 同向转运体
+  pitfalls: 引起高尿酸、高血糖、低钾，但减少尿钙（可治肾结石伴高尿钙）
+- id: semide
+  stem: -semide/-anide
+  position: suffix
+  regex: semide$|tanide$
+  cn: 塞米/他尼
+  cls: 袢利尿药
+  mechanism: 抑制髓袢升支粗段 Na⁺-K⁺-2Cl⁻ 同向转运体
+  pitfalls: 呋塞米 furosemide、布美他尼 bumetanide；托拉塞米 torasemide
+- id: parin
+  stem: -parin
+  position: suffix
+  regex: parin$
+  cn: 肝素
+  cls: 低分子肝素
+  mechanism: 主要抑制 Xa
+  pitfalls: 依诺肝素 enoxaparin vs 依那普利 enalapril 字头相同
+- id: xaban
+  stem: -xaban
+  position: suffix
+  regex: xaban$
+  cn: 沙班
+  cls: 直接Xa因子抑制药
+  mechanism: 直接抑制 Xa
+  pitfalls: 利伐沙班 rivaroxaban
+- id: gatran
+  stem: -gatran
+  position: suffix
+  regex: gatran$
+  cn: 加群
+  cls: 直接凝血酶抑制药
+  mechanism: 直接抑制 IIa
+  pitfalls: 达比加群 dabigatran
+- id: teplase
+  stem: -teplase
+  position: suffix
+  regex: teplase$
+  cn: 替普酶
+  cls: 组织型纤溶酶原激活剂
+  mechanism: 选择性激活与纤维蛋白结合的纤溶酶原
+  pitfalls: 阿替普酶 alteplase = t-PA
+- id: kinase
+  stem: -kinase
+  position: suffix
+  regex: kinase$
+  cn: 激酶
+  cls: 纤溶药
+  mechanism: 激活纤溶酶原
+  pitfalls: 链激酶 streptokinase ≠ 链霉素 streptomycin
+- id: grel
+  stem: -grel-
+  position: infix
+  regex: grel
+  cn: 格雷
+  cls: P2Y12（ADP受体）拮抗药
+  mechanism: 阻碍 ADP 介导的血小板聚集
+  pitfalls: 氯吡格雷 clopidogrel、替格瑞洛 ticagrelor
+- id: cillin
+  stem: -cillin
+  position: suffix
+  regex: cillin$
+  cn: 西林
+  cls: 青霉素类
+  mechanism: 抑制细菌细胞壁（PBPs）
+  pitfalls: 羧苄西林、哌拉西林抗铜绿；苯唑西林耐酶
+- id: cef
+  stem: cef-
+  position: prefix
+  regex: ^cef|^ceph
+  cn: 头孢
+  cls: 头孢菌素类
+  mechanism: 抑制细胞壁
+  pitfalls: 头孢他啶 ceftazidime 抗铜绿最强（三代）
+- id: penem
+  stem: -penem
+  position: suffix
+  regex: penem$
+  cn: 培南
+  cls: 碳青霉烯类
+  mechanism: 抑制细胞壁
+  pitfalls: 亚胺培南 imipenem ≠ 丙咪嗪 imipramine
+- id: bactam
+  stem: -bactam
+  position: suffix
+  regex: bactam$
+  cn: 巴坦
+  cls: β-内酰胺酶抑制剂
+  mechanism: 保护β-内酰胺类
+  pitfalls: 克拉维酸 clavulanate 不带该词干
+- id: mycin
+  stem: -mycin
+  position: suffix
+  regex: mycin$
+  cn: 霉素
+  cls: 链霉菌来源抗生素（类别不唯一！）
+  mechanism: 需记具体类别
+  pitfalls: 最大陷阱：链霉素/卡那霉素（氨基糖苷）、红霉素/阿奇霉素（大环内酯）、万古霉素（糖肽）、林可霉素、博来霉素/放线菌素(dactinomycin，抗肿瘤)都带 -mycin
+- id: micin
+  stem: -micin
+  position: suffix
+  regex: micin$
+  cn: 米星/霉素
+  cls: 小单孢菌来源氨基糖苷类
+  mechanism: 抑制30S，干扰蛋白质合成
+  pitfalls: 庆大霉素 gentamicin、依替米星 etimicin、奈替米星；阿米卡星 amikacin 是 -kacin
+- id: kacin
+  stem: -kacin
+  position: suffix
+  regex: kacin$
+  cn: 卡星
+  cls: 卡那霉素衍生氨基糖苷类
+  mechanism: 同氨基糖苷
+  pitfalls: 阿米卡星 amikacin：抗菌谱最广的氨基糖苷
+- id: cycline
+  stem: -cycline
+  position: suffix
+  regex: cycline$
+  cn: 环素
+  cls: 四环素类
+  mechanism: 抑制30S
+  pitfalls: 牙齿黄染、骨骼影响；立克次体首选（多西环素）
+- id: floxacin
+  stem: -floxacin
+  position: suffix
+  regex: oxacin$
+  cn: 沙星
+  cls: 氟喹诺酮类
+  mechanism: 抑制 DNA 回旋酶（G⁻）与拓扑异构酶Ⅳ（G⁺）
+  pitfalls: 萘啶酸 nalidixic acid 为第一代，不带此词干
+- id: sulfa
+  stem: sulfa-
+  position: prefix
+  regex: ^sulfa(?!te$)|^sulpha(?!te$)
+  cn: 磺胺
+  cls: 磺胺类
+  mechanism: 抑制二氢蝶酸合酶
+  pitfalls: 与 TMP（抑制二氢叶酸还原酶）双重阻断叶酸代谢；注意 sulfate（硫酸盐，如 magnesium sulfate 硫酸镁）不是磺胺
+- id: nidazole
+  stem: -nidazole
+  position: suffix
+  regex: nidazole$
+  cn: 硝唑
+  cls: 硝基咪唑类
+  mechanism: 抗厌氧菌/原虫
+  pitfalls: 甲硝唑 metronidazole
+- id: conazole
+  stem: -conazole
+  position: suffix
+  regex: conazole$
+  cn: 康唑
+  cls: 唑类抗真菌药
+  mechanism: 抑制麦角固醇合成
+  pitfalls: 氟康唑 fluconazole
+- id: vir
+  stem: -vir
+  position: suffix
+  regex: vir$
+  cn: 韦
+  cls: 抗病毒药
+  mechanism: —
+  pitfalls: 阿昔洛韦 aciclovir
+- id: azepam
+  stem: -azepam/-azolam
+  position: suffix
+  regex: azepam$|azolam$
+  cn: 西泮/唑仑
+  cls: 苯二氮䓬类
+  mechanism: 增强 GABA-A 受体 Cl⁻ 通道开放频率
+  pitfalls: 氟马西尼 flumazenil 为其拮抗剂（-azenil）；地西泮 ≠ 地昔帕明
+- id: azenil
+  stem: -azenil
+  position: suffix
+  regex: azenil$
+  cn: 西尼
+  cls: 苯二氮䓬受体拮抗/部分激动药
+  mechanism: —
+  pitfalls: 氟马西尼
+- id: barb
+  stem: -barbital
+  position: suffix
+  regex: barbital$
+  cn: 巴比妥
+  cls: 巴比妥类
+  mechanism: 延长 Cl⁻ 通道开放时间；大剂量直接开放
+  pitfalls: 有肝药酶诱导作用（苯巴比妥）
+- id: zolpidem
+  stem: -pidem/-plon/-clone
+  position: suffix
+  regex: pidem$|plon$|clone$
+  cn: 吡坦/普隆/克隆
+  cls: 非苯二氮䓬类催眠药（Z-drugs）
+  mechanism: 选择性作用于 BZ1(ω1) 受体
+  pitfalls: 唑吡坦 zolpidem、扎来普隆 zaleplon、佐匹克隆 zopiclone
+- id: melteon
+  stem: -melteon
+  position: suffix
+  regex: melteon$
+  cn: 美替胺
+  cls: 褪黑素受体激动药
+  mechanism: 激动 MT1/MT2，非 GABA 机制
+  pitfalls: 雷美替胺 ramelteon
+- id: oxetine
+  stem: -oxetine
+  position: suffix
+  regex: oxetine$
+  cn: 西汀
+  cls: SSRI 等再摄取抑制药
+  mechanism: 抑制 5-HT 再摄取
+  pitfalls: 氟西汀 fluoxetine ≠ 氟马西尼 / 氟奋乃静
+- id: triptyline
+  stem: -triptyline/-pramine
+  position: suffix
+  regex: triptyline$|pramine$|epin$
+  cn: 替林/帕明/塞平
+  cls: 三环类抗抑郁药
+  mechanism: 抑制 NA/5-HT 再摄取 + M 阻断
+  pitfalls: 地昔帕明 desipramine 主要抑制 NA 再摄取；doxepin 多塞平同属 TCA
+- id: azine
+  stem: -azine/-promazine
+  position: suffix
+  regex: promazine$|phenazine$
+  cn: 丙嗪/奋乃静
+  cls: 吩噻嗪类抗精神病药
+  mechanism: 阻断 D2（中脑-边缘、中脑-皮质）
+  pitfalls: 氯丙嗪 chlorpromazine ≠ 氯氮平 clozapine（-apine，非典型）
+- id: apine
+  stem: -apine
+  position: suffix
+  regex: apine$
+  cn: 平
+  cls: 二苯二氮䓬类（非典型）抗精神病药
+  mechanism: 5-HT2A + D2 阻断
+  pitfalls: 氯氮平 clozapine、奥氮平 olanzapine、喹硫平 quetiapine；注意与 -dipine（地平）、卡马西平 carbamazepine(-azepine) 区分
+- id: peridone
+  stem: -peridone
+  position: suffix
+  regex: peridone$
+  cn: 哌酮/培酮
+  cls: 苯并异噁唑类非典型抗精神病药
+  mechanism: 5-HT2A + D2 阻断
+  pitfalls: 利培酮 risperidone
+- id: peridol
+  stem: -peridol
+  position: suffix
+  regex: peridol$
+  cn: 哌啶醇
+  cls: 丁酰苯类抗精神病药
+  mechanism: 强 D2 阻断，锥体外系反应重
+  pitfalls: 氟哌啶醇 haloperidol
+- id: stigmine
+  stem: -stigmine
+  position: suffix
+  regex: stigmine$
+  cn: 斯的明
+  cls: 胆碱酯酶抑制药
+  mechanism: 易逆性抑制 AChE
+  pitfalls: 新斯的明 neostigmine（重症肌无力）、毒扁豆碱 physostigmine
+- id: tropium
+  stem: -tropium
+  position: suffix
+  regex: tropium$
+  cn: 托铵
+  cls: 季铵类 M 受体阻断药（吸入平喘）
+  mechanism: 阻断气道 M 受体
+  pitfalls: 异丙托溴铵 ipratropium bromide
+- id: terol
+  stem: -terol/-butamol
+  position: suffix
+  regex: terol$|butamol$|butaline$
+  cn: 特罗/丁胺醇/他林
+  cls: β2受体激动药
+  mechanism: 激动β2，舒张支气管
+  pitfalls: 沙丁胺醇 salbutamol、特布他林 terbutaline、福莫特罗 formoterol；长期单用β2受体下调
+- id: lukast
+  stem: -lukast
+  position: suffix
+  regex: lukast$
+  cn: 司特
+  cls: 白三烯受体拮抗药
+  mechanism: 阻断 CysLT1
+  pitfalls: 孟鲁司特 montelukast
+- id: phylline
+  stem: -phylline
+  position: suffix
+  regex: phylline$
+  cn: 茶碱
+  cls: 黄嘌呤类平喘药
+  mechanism: 抑制 PDE、阻断腺苷受体、促内源性儿茶酚胺释放、增强膈肌收缩
+  pitfalls: 氨茶碱 aminophylline：心源性哮喘可用
+- id: caine
+  stem: -caine
+  position: suffix
+  regex: caine$
+  cn: 卡因
+  cls: 局部麻醉药
+  mechanism: 阻滞电压门控 Na⁺ 通道
+  pitfalls: 利多卡因 lidocaine 同时为 Ib 类抗心律失常药
+- id: arone
+  stem: -arone
+  position: suffix
+  regex: arone$
+  cn: 酮（胺碘酮）
+  cls: Ⅲ类抗心律失常药（苯并呋喃类）
+  mechanism: 阻滞 K⁺ 通道延长 APD
+  pitfalls: 胺碘酮含碘→甲状腺功能紊乱；肺纤维化（需胸部X线）；角膜褐色微粒沉积
+- id: profen
+  stem: -profen
+  position: suffix
+  regex: profen$
+  cn: 洛芬
+  cls: 芳基丙酸类 NSAIDs
+  mechanism: 非选择性抑制 COX
+  pitfalls: 布洛芬 ibuprofen：儿童常用
+- id: coxib
+  stem: -coxib
+  position: suffix
+  regex: coxib$
+  cn: 昔布
+  cls: 选择性 COX-2 抑制药
+  mechanism: 选择性抑制 COX-2
+  pitfalls: 塞来昔布 celecoxib：胃肠道反应小，心血管风险
+- id: prazole
+  stem: -prazole
+  position: suffix
+  regex: prazole$
+  cn: 拉唑
+  cls: 质子泵抑制剂
+  mechanism: 不可逆抑制 H⁺,K⁺-ATP 酶
+  pitfalls: 奥美拉唑 omeprazole
+- id: tidine
+  stem: -tidine
+  position: suffix
+  regex: tidine$
+  cn: 替丁
+  cls: H2受体阻断药
+  mechanism: 阻断胃壁细胞 H2 受体
+  pitfalls: 西咪替丁有肝药酶抑制作用
+- id: setron
+  stem: -setron
+  position: suffix
+  regex: setron$
+  cn: 司琼
+  cls: 5-HT3受体阻断止吐药
+  mechanism: 阻断 5-HT3
+  pitfalls: 昂丹司琼 ondansetron；甲氧氯普胺 metoclopramide 为 D2 阻断（-pramide）
+- id: gli
+  stem: gli-/gly-
+  position: prefix
+  regex: ^gli|^gly(?!c)
+  cn: 格列
+  cls: 磺酰脲类（及部分其他）降糖药
+  mechanism: 阻断胰岛β细胞 K_ATP，促胰岛素分泌
+  pitfalls: 格列本脲 glibenclamide、格列齐特 gliclazide；甲苯磺丁脲 tolbutamide 无 gli- 字头
+- id: glinide
+  stem: -glinide
+  position: suffix
+  regex: glinide$
+  cn: 格列奈
+  cls: 格列奈类（餐时血糖调节剂）
+  mechanism: 同 K_ATP 机制，起效快、作用短
+  pitfalls: 瑞格列奈 repaglinide
+- id: glitazone
+  stem: -glitazone
+  position: suffix
+  regex: glitazone$
+  cn: 格列酮
+  cls: 噻唑烷二酮类
+  mechanism: 激动 PPAR-γ，胰岛素增敏
+  pitfalls: 罗格列酮 rosiglitazone
+- id: gliptin
+  stem: -gliptin
+  position: suffix
+  regex: gliptin$
+  cn: 格列汀
+  cls: DPP-4 抑制药
+  mechanism: —
+  pitfalls: 西格列汀 sitagliptin
+- id: gliflozin
+  stem: -gliflozin
+  position: suffix
+  regex: gliflozin$
+  cn: 格列净
+  cls: SGLT2 抑制药
+  mechanism: —
+  pitfalls: 达格列净 dapagliflozin
+- id: formin
+  stem: -formin
+  position: suffix
+  regex: formin$
+  cn: 双胍
+  cls: 双胍类
+  mechanism: 抑制肝糖异生、增加外周摄取（AMPK）
+  pitfalls: 二甲双胍 metformin：乳酸酸中毒；不刺激胰岛素分泌
+- id: bose
+  stem: -bose
+  position: suffix
+  regex: bose$
+  cn: 波糖
+  cls: α-葡萄糖苷酶抑制药
+  mechanism: 延缓碳水化合物吸收
+  pitfalls: 阿卡波糖 acarbose
+- id: sone
+  stem: -sone/-olone/-onide
+  position: suffix
+  regex: sone$|olone$|onide$
+  cn: 松/龙/奈德
+  cls: 糖皮质激素
+  mechanism: —
+  pitfalls: 泼尼松 prednisone 需肝脏转化为泼尼松龙 prednisolone——肝病患者用泼尼松龙/氢化可的松
+- id: uracil
+  stem: -uracil
+  position: suffix
+  regex: uracil$|thiouracil$
+  cn: 尿嘧啶
+  cls: 尿嘧啶类（抗代谢/抗甲状腺）
+  mechanism: —
+  pitfalls: 丙硫氧嘧啶 propylthiouracil（抗甲状腺）vs 氟尿嘧啶 fluorouracil（抗肿瘤）
+- id: rubicin
+  stem: -rubicin
+  position: suffix
+  regex: rubicin$
+  cn: 柔比星
+  cls: 蒽环类抗肿瘤抗生素
+  mechanism: 嵌入 DNA、抑制拓扑异构酶Ⅱ
+  pitfalls: 心脏毒性
+- id: platin
+  stem: -platin
+  position: suffix
+  regex: platin$
+  cn: 铂
+  cls: 铂类抗肿瘤药
+  mechanism: 与 DNA 交叉联结
+  pitfalls: 顺铂：肾毒性、耳毒性
+- id: taxel
+  stem: -taxel
+  position: suffix
+  regex: taxel$
+  cn: 他赛
+  cls: 紫杉烷类
+  mechanism: 促进微管聚合、抑制解聚（使微管稳定）
+  pitfalls: 与长春碱类（vin-，抑制微管聚合）相反
+- id: vin
+  stem: vin-
+  position: prefix
+  regex: ^vin
+  cn: 长春
+  cls: 长春碱类
+  mechanism: 与微管蛋白结合，抑制微管聚合
+  pitfalls: 长春新碱 vincristine：周围神经毒性
+- id: tinib
+  stem: -tinib
+  position: suffix
+  regex: tinib$
+  cn: 替尼
+  cls: 酪氨酸激酶抑制药
+  mechanism: —
+  pitfalls: 伊马替尼 imatinib
+- id: phosph
+  stem: -phosphamide
+  position: suffix
+  regex: phosphamide$
+  cn: 磷酰胺
+  cls: 氮芥类烷化剂
+  mechanism: DNA 烷化（鸟嘌呤 N7）
+  pitfalls: 环磷酰胺 cyclophosphamide：出血性膀胱炎
+- id: trexate
+  stem: -trexate
+  position: suffix
+  regex: trexate$
+  cn: 蝶呤/曲沙
+  cls: 叶酸拮抗药
+  mechanism: 抑制二氢叶酸还原酶
+  pitfalls: 甲氨蝶呤 methotrexate；亚叶酸钙解救
+- id: limus
+  stem: -limus
+  position: suffix
+  regex: limus$
+  cn: 莫司
+  cls: 钙调磷酸酶/mTOR 抑制药
+  mechanism: —
+  pitfalls: 他克莫司 tacrolimus；环孢素 ciclosporin 无此词干
+- id: orphine
+  stem: -orphine/-orphan
+  position: suffix
+  regex: orphine$|orphan$
+  cn: 啡/啡烷
+  cls: 吗啡类
+  mechanism: 阿片受体
+  pitfalls: 丁丙诺啡 buprenorphine：部分激动药，用于脱毒
+- id: oxone
+  stem: -oxone
+  position: suffix
+  regex: oxone$
+  cn: 洛酮
+  cls: 阿片受体拮抗药
+  mechanism: 阻断 μ 受体
+  pitfalls: 纳洛酮 naloxone：吗啡中毒解救
+- id: dopa
+  stem: -dopa
+  position: suffix
+  regex: 'dopa$|dopa '
+  cn: 多巴
+  cls: 多巴胺前体/脱羧酶抑制药
+  mechanism: —
+  pitfalls: 卡比多巴 carbidopa 是外周 AADC 抑制剂，本身不是多巴胺前体
+- id: pexole
+  stem: -pexole
+  position: suffix
+  regex: pexole$
+  cn: 克索
+  cls: 非麦角类多巴胺受体激动药
+  mechanism: 激动 D2/D3
+  pitfalls: 普拉克索 pramipexole
+- id: giline
+  stem: -giline
+  position: suffix
+  regex: giline$
+  cn: 吉兰
+  cls: MAO-B 抑制药
+  mechanism: 选择性抑制 MAO-B
+  pitfalls: 司来吉兰 selegiline
+- id: capone
+  stem: -capone
+  position: suffix
+  regex: capone$
+  cn: 卡朋
+  cls: COMT 抑制药
+  mechanism: —
+  pitfalls: 恩他卡朋 entacapone
+- id: dronate
+  stem: -dronate
+  position: suffix
+  regex: dronate$
+  cn: 膦酸
+  cls: 双膦酸盐
+  mechanism: 抑制破骨细胞
+  pitfalls: 阿仑膦酸钠
+- id: ium
+  stem: -curium/-curonium
+  position: suffix
+  regex: curium$|curonium$
+  cn: 库铵/库溴铵
+  cls: 非去极化肌松药
+  mechanism: 阻断 NM 受体
+  pitfalls: 新斯的明可拮抗

@@ -1,0 +1,153 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 22-lin5-final
+  title: 2022级 临床医学（五年制） 药理学 期末
+  cohort: 2022
+  major: 临床医学（五年制）
+  kind: 期末
+  source:
+    title: 考试| 22临五 药理
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247486428&idx=8&sn=8fddc59870e08e862700421b294600fa&chksm=c2c27870f5b5f166a1a75b85938209935de22346d3b303d70b7d2d875c1352580e7d1bee0c83
+    published: '2025-01-02'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 选择题
+    type: choice
+    header: 选择
+  - section: 名词解释
+    type: definition
+    header: 名词解释
+  - section: 问答题
+    type: essay
+    header: 大题
+  notes: [tips：抗生素考得很多]
+questions:
+- id: 22-lin5-final-001
+  num: 1
+  section: 选择题
+  type: choice
+  stem: 耳毒性的抗生素
+  completeness: stem_only
+  answer: 氨基糖苷类、万古霉素等
+  kp: [aminoglycosides]
+  status: draft-ai
+- id: 22-lin5-final-002
+  num: 2
+  section: 选择题
+  type: choice
+  stem: 治疗脑脓肿的抗生素
+  completeness: stem_only
+  answer: 甲硝唑联合三代头孢（能透过血脑屏障）
+  analysis: 选项未回忆
+  kp: [cns_infection]
+  status: draft-ai
+- id: 22-lin5-final-003
+  num: 3
+  section: 选择题
+  type: choice
+  stem: 放线菌素抗恶性肿瘤的机制
+  completeness: stem_only
+  answer: 嵌入DNA碱基对，阻碍RNA多聚酶，抑制mRNA转录
+  kp: [anticancer]
+  status: draft-ai
+- id: 22-lin5-final-004
+  num: 4
+  section: 选择题
+  type: choice
+  stem: 慢性胰岛素抵抗的解决方案
+  completeness: stem_only
+  answer: 更换高纯度/人胰岛素、加用胰岛素增敏剂或口服降糖药、加大剂量
+  kp: [insulin]
+  status: draft-ai
+- id: 22-lin5-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: pKa
+  completeness: full
+  answer_ref: [pKa_ion_trapping]
+  kp: [pKa_ion_trapping]
+  status: draft-ai
+- id: 22-lin5-final-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: 生物利用度
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 22-lin5-final-007
+  num: 7
+  section: 名词解释
+  type: definition
+  stem: noncompetitive antagonist
+  completeness: full
+  answer_ref: [noncompetitive_antagonist]
+  analysis: 英文名解：noncompetitive antagonist = 非竞争性拮抗药；关键是“最大效应降低”。
+  kp: [noncompetitive_antagonist]
+  status: draft-ai
+- id: 22-lin5-final-008
+  num: 8
+  section: 名词解释
+  type: definition
+  stem: 酶抑制药
+  completeness: full
+  answer_ref: [enzyme_inhibitor]
+  kp: [enzyme_inhibitor]
+  status: draft-ai
+- id: 22-lin5-final-009
+  num: 9
+  section: 名词解释
+  type: definition
+  stem: therapeutic index
+  completeness: full
+  answer_ref: [therapeutic_index]
+  kp: [therapeutic_index]
+  status: draft-ai
+- id: 22-lin5-final-010
+  num: 10
+  section: 问答题
+  type: essay
+  stem: 案例题：一个患者肾结石伴高尿钙
+  sub: [应该用什么利尿药？, 为什么？, 这种利尿药的利尿机制和临床应用？]
+  completeness: full
+  answer_ref: [thiazides#肾结石伴高尿钙（22临五案例）, thiazides#作用机制, thiazides#三大作用]
+  analysis: 关键：噻嗪类减少尿钙，袢利尿药增加尿钙——选错类别整题失分。
+  kp: [thiazides, diuretics_general]
+  status: draft-ai
+- id: 22-lin5-final-011
+  num: 11
+  section: 问答题
+  type: essay
+  stem: 强心苷
+  sub: [对心肌电生理特性的影响？, 对心脏的毒性？]
+  completeness: full
+  answer_ref: [cardiac_glycosides#药理作用, cardiac_glycosides#不良反应]
+  analysis: 电生理分部位写：窦房结自律性↓、房室结传导↓、浦肯野纤维自律性↑、心房 ERP↓。毒性写快速型/缓慢型心律失常。
+  kp: [cardiac_glycosides]
+  status: draft-ai
+- id: 22-lin5-final-012
+  num: 12
+  section: 问答题
+  type: essay
+  stem: 案例题：一个人糖尿病肾病
+  sub: [根据案例信息给出诊断, 从学过的口服药里面找出两个用于治疗这个患者，并说明他们的药理机制]
+  completeness: full
+  answer_ref: [oral_hypoglycemics#分类与代表药]
+  analysis: 诊断：2 型糖尿病合并糖尿病肾病（需结合案例中的血糖、尿蛋白、肾功能）。选药须考虑肾功能：二甲双胍在 eGFR 显著下降时禁用；可选格列喹酮（主要经胆汁排泄）、瑞格列奈、利格列汀、SGLT2 抑制剂（兼肾保护）等，并联用 ACEI/ARB 减少蛋白尿。⚠ 原题案例细节未回忆，按授课口径确认。
+  kp: [oral_hypoglycemics]
+  status: draft-ai
+- id: 22-lin5-final-013
+  num: 13
+  section: 问答题
+  type: essay
+  stem: 青霉素
+  sub: [药理机制, 临床应用, 不良反应]
+  completeness: full
+  answer_ref: [beta_lactams#青霉素G机制, beta_lactams#临床应用, beta_lactams#不良反应]
+  analysis: 三问对应三节；过敏性休克与赫氏反应必写。
+  kp: [beta_lactams]
+  status: draft-ai

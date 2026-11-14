@@ -1,0 +1,100 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 24-lin5-midterm
+  title: 2024级 临床医学（五年制） 药理学 期中
+  cohort: 2024
+  major: 临床医学（五年制）
+  kind: 期中
+  source:
+    title: 考试| 24临五 药理期中
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247489182&idx=1&sn=b9ba39f274dc25c4c5c19e110b20f8c1&chksm=c2c26532f5b5ec24ed25c83ad347ab2dd13f8e6f4b237565bacf8ecc6c23823d60330c497661
+    published: '2026-11-10'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 单选题
+    type: single_choice
+    header: 单选
+  - section: 名词解释
+    type: definition
+    header: 名解
+  - section: 问答题
+    type: essay
+    header: 大题
+  notes: [特别多英文，而且考的全是药名，题目本身不难，主要是认识有点困难]
+questions:
+- id: 24-lin5-midterm-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 副作用
+  completeness: full
+  answer_ref: [side_effect]
+  kp: [side_effect]
+  status: draft-ai
+- id: 24-lin5-midterm-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: potency
+  completeness: full
+  answer_ref: [potency]
+  kp: [potency]
+  status: draft-ai
+- id: 24-lin5-midterm-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 首过消除
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 24-lin5-midterm-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 稳态浓度
+  completeness: full
+  answer_ref: [css]
+  kp: [css]
+  status: draft-ai
+- id: 24-lin5-midterm-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 竞争性拮抗
+  completeness: full
+  answer_ref: [competitive_antagonist]
+  kp: [competitive_antagonist]
+  status: draft-ai
+- id: 24-lin5-midterm-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: 生物利用度
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 24-lin5-midterm-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 有机磷中毒的机制，以及解毒剂有哪些，各自的机制
+  completeness: full
+  answer_ref: [op_poisoning#作用机制, op_poisoning#解毒药及机制, op_poisoning#为何必须合用]
+  analysis: 考点：AChE 磷酰化与“老化”。答题框架：中毒机制→M/N/中枢症状→两类解毒药各自机制→为何合用。易错：解磷定对已老化的酶无效，须早用。
+  kp: [op_poisoning, atropine]
+  status: draft-ai
+- id: 24-lin5-midterm-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: fluoxetine的机制，临床作用以及不良反应
+  completeness: full
+  answer_ref: [antidepressants]
+  analysis: 英文药名题：-oxetine = SSRI。框架：机制（选择性抑制 5-HT 再摄取）→ 适应证 → 不良反应（含 5-HT 综合征、禁与 MAOI 合用）。
+  kp: [antidepressants]
+  status: draft-ai

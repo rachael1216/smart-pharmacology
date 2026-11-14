@@ -1,0 +1,86 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 24-pharm-lab
+  title: 2024级 药学 药理学 实验
+  cohort: 2024
+  major: 药学
+  kind: 实验
+  source:
+    title: 考试| 24药学 药理学实验
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247488569&idx=3&sn=98867d5130c4de7875435f1b0d78ca22&chksm=c2c26795f5b5ee83625e5b8bdf482917d13cdd9d9933c88dcf7704bcde0dd96b8fc4d8c6743f
+    published: '2026-06-19'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 填空题
+    type: fill_blank
+    score: 共10分
+    header: 一、填空题（10）
+  - section: 简答题
+    type: short_answer
+    score: 共4分
+    header: 二、简答题（4）
+  - section: 实验设计题
+    type: experiment_design
+    score: 共6分
+    header: 三、实验设计（6）
+questions:
+- id: 24-pharm-lab-001
+  num: 1
+  section: 填空题
+  type: fill_blank
+  stem: 尼可刹米给家兔注射时的剂量为90mg/kg，现在注射的浓度为25%，2.4kg体重的家兔需注射此种注射液______mL。
+  completeness: full
+  answer: '0.864'
+  analysis: 90×2.4=216 mg；25%=250 mg/ml；216/250
+  kp: [lab]
+  status: draft-ai
+- id: 24-pharm-lab-002
+  num: 2
+  section: 填空题
+  type: fill_blank
+  stem: 热板法实验应选用______性小鼠
+  completeness: full
+  answer: 雌
+  analysis: 雄鼠受热后阴囊松弛触及热板，易致误判
+  kp: [lab]
+  status: draft-ai
+- id: 24-pharm-lab-003
+  num: 3
+  section: 填空题
+  type: fill_blank
+  stem: 3R原则分别是______、______、______。
+  completeness: full
+  answer: 替代（Replacement）、减少（Reduction）、优化（Refinement）
+  kp: [lab]
+  status: draft-ai
+- id: 24-pharm-lab-004
+  num: 4
+  section: 填空题
+  type: fill_blank
+  stem: 有机磷中毒解救时，应先用______，再用______。
+  completeness: full
+  answer: 阿托品；解磷定（氯解磷定/碘解磷定）
+  kp: [op_poisoning]
+  status: draft-ai
+- id: 24-pharm-lab-005
+  num: 5
+  section: 简答题
+  type: short_answer
+  stem: LD50是什么？测定药物的LD50有什么意义以及主要的影响因素。
+  completeness: full
+  answer_ref: [median_dose, lab#LD₅₀]
+  analysis: 三问：定义、意义（急性毒性、治疗指数）、影响因素（动物、给药、环境三方面）。
+  kp: [median_dose, lab]
+  status: draft-ai
+- id: 24-pharm-lab-006
+  num: 6
+  section: 实验设计题
+  type: experiment_design
+  stem: 药品柜中有两瓶药品，分别是吗啡和阿托品，标签模糊辨认不清，请你设计一个药理实验进行鉴别，并阐述设计原理和结果判定。
+  completeness: full
+  answer_ref: [lab#鉴别吗啡与阿托品实验设计]
+  analysis: 实验设计题要写全：原理（缩瞳 vs 扩瞳）、对象与分组、操作、观察指标、结果判定、对照。
+  kp: [lab, opioids, atropine]
+  status: draft-ai

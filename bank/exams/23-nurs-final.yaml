@@ -1,0 +1,161 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 23-nurs-final
+  title: 2023级 护理学 药理学 期末
+  cohort: 2023
+  major: 护理学
+  kind: 期末
+  source:
+    title: 考试| 23护理 药理
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247487226&idx=3&sn=a987181d9dd8d7946794eb3d625a5fff&chksm=c2c27d56f5b5f440e413c9e0b3d76bb5318592411fe6ca96429391ce505b2c20d54321c15533
+    published: '2025-06-19'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 单选题
+    type: single_choice
+    header: 单选（47个，A1/A2/B1）
+  - section: 多选题
+    type: multi_choice
+    header: 多选（2分*5，全选对才得分）
+  - section: 名词解释
+    type: definition
+    score: 3分×5
+    header: 名词解释（3分*5）
+  - section: 问答题
+    type: essay
+    score: 7分×4
+    header: 大题（7分*4）
+  notes: [tips：选择题心血管系统部分和历年题差不多，血液的药会考，抗生素分类和特征，消化几乎没考，呼吸有几个选择]
+questions:
+- id: 23-nurs-final-001
+  num: 1
+  section: 单选题
+  type: single_choice
+  stem: t-PA抗心梗机制
+  completeness: stem_only
+  answer: 选择性激活与纤维蛋白结合的纤溶酶原转为纤溶酶，溶解血栓
+  kp: [fibrinolytics]
+  status: draft-ai
+- id: 23-nurs-final-002
+  num: 2
+  section: 单选题
+  type: single_choice
+  stem: B1型题考了抗心律失常药，降糖药，抗生素
+  completeness: stem_only
+  kp: [antiarrhythmics, oral_hypoglycemics]
+  status: todo
+- id: 23-nurs-final-003
+  num: 3
+  section: 多选题
+  type: multi_choice
+  stem: 胺碘酮不良反应
+  completeness: stem_only
+  answer: 甲状腺功能紊乱、间质性肺炎/肺纤维化、角膜褐色微粒沉着、光敏、肝损害、心动过缓/Q-T延长
+  kp: [antiarrhythmics]
+  status: draft-ai
+- id: 23-nurs-final-004
+  num: 4
+  section: 多选题
+  type: multi_choice
+  stem: 甲状腺激素作用
+  completeness: stem_only
+  answer: 维持生长发育、促进代谢产热、提高交感敏感性
+  kp: [thyroid_hormone]
+  status: draft-ai
+- id: 23-nurs-final-005
+  num: 5
+  section: 多选题
+  type: multi_choice
+  stem: 胰岛素生理作用
+  completeness: stem_only
+  answer: 降血糖、促进脂肪合成抑制分解、促进蛋白质合成、促K⁺入胞
+  kp: [insulin]
+  status: draft-ai
+- id: 23-nurs-final-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: 肝肠循环
+  completeness: full
+  answer_ref: [enterohepatic]
+  kp: [enterohepatic]
+  status: draft-ai
+- id: 23-nurs-final-007
+  num: 7
+  section: 名词解释
+  type: definition
+  stem: 相对生物利用度
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 23-nurs-final-008
+  num: 8
+  section: 名词解释
+  type: definition
+  stem: 激动药和拮抗药
+  completeness: full
+  answer_ref: [agonist]
+  kp: [agonist, antagonist]
+  status: draft-ai
+- id: 23-nurs-final-009
+  num: 9
+  section: 名词解释
+  type: definition
+  stem: 药物的血浆清除率
+  completeness: full
+  answer_ref: [clearance]
+  kp: [clearance]
+  status: draft-ai
+- id: 23-nurs-final-010
+  num: 10
+  section: 名词解释
+  type: definition
+  stem: first pass effect
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 23-nurs-final-011
+  num: 11
+  section: 问答题
+  type: essay
+  stem: 病例：高血压15年，慢性心力衰竭，双下肢水肿，颈静脉怒张，双肺底湿啰音，心界向左下扩大。首选什么利尿药，说明理由，并试述作用部位和药理机制
+  completeness: full
+  answer: 首选呋塞米（袢利尿药）。理由：患者有颈静脉怒张、双下肢水肿和双肺底湿啰音，提示体循环与肺循环淤血较重，需要高效、速效利尿；呋塞米静注还能扩张容量静脉，先于利尿减轻肺淤血。作用部位：髓袢升支粗段。
+  answer_ref: [loop_diuretics#作用机制, loop_diuretics#心衰伴肺水肿的意义]
+  analysis: 病例为慢性心衰急性加重（体循环 + 肺循环淤血），宜首选袢利尿药呋塞米；轻度水肿可选噻嗪类。理由要结合“高效、起效快、扩张容量静脉减轻肺淤血”。
+  kp: [loop_diuretics, heart_failure, diuretics_general]
+  status: draft-ai
+- id: 23-nurs-final-012
+  num: 12
+  section: 问答题
+  type: essay
+  stem: 普萘洛尔的降压机制
+  completeness: topic_only
+  answer_ref: [beta_blockers#普萘洛尔降压机制]
+  analysis: 五条机制：心脏 β₁、肾素、中枢、突触前膜 β₂、前列环素。
+  kp: [beta_blockers]
+  status: draft-ai
+- id: 23-nurs-final-013
+  num: 13
+  section: 问答题
+  type: essay
+  stem: 风湿性关节炎长期用泼尼松的不良反应
+  completeness: full
+  answer_ref: [gc_adverse]
+  analysis: 同糖皮质激素不良反应高频题；泼尼松长期用同样适用。
+  kp: [gc_adverse]
+  status: draft-ai
+- id: 23-nurs-final-014
+  num: 14
+  section: 问答题
+  type: essay
+  stem: 四环素的临床应用和抗菌谱
+  completeness: full
+  answer_ref: [tetracyclines#四环素抗菌谱, tetracyclines#临床应用]
+  analysis: 同 23 临五缓考。
+  kp: [tetracyclines]
+  status: draft-ai

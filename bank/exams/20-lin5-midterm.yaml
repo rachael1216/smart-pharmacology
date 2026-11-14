@@ -1,0 +1,376 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 20-lin5-midterm
+  title: 2020级 临床医学（五年制） 药理学 期中
+  cohort: 2020
+  major: 临床医学（五年制）
+  kind: 期中
+  source:
+    title: 考试| 20临五 药理期中
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247483920&idx=1&sn=20ab02bf10e8d650cff04fc463881e5f&chksm=c2c271bcf5b5f8aa8f2e0475f5bb3504087690dd04084d93e6bedded590468719173823ec4f3
+    published: '2023-01-29'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  notes: [原文为学习通截图（47 张），题干与选项未转录；本文件仅保存答案序列。]
+questions:
+- id: 20-lin5-midterm-001
+  num: 1
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-002
+  num: 2
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-003
+  num: 3
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: A
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-004
+  num: 4
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-005
+  num: 5
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-006
+  num: 6
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: B
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-007
+  num: 7
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: A
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-008
+  num: 8
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-009
+  num: 9
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-010
+  num: 10
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-011
+  num: 11
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-012
+  num: 12
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-013
+  num: 13
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: C
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-014
+  num: 14
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: C
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-015
+  num: 15
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-016
+  num: 16
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-017
+  num: 17
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: B
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-018
+  num: 18
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-019
+  num: 19
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-020
+  num: 20
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-021
+  num: 21
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-022
+  num: 22
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-023
+  num: 23
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: C
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-024
+  num: 24
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: B
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-025
+  num: 25
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-026
+  num: 26
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: D
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-027
+  num: 27
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: A
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-028
+  num: 28
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-029
+  num: 29
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: E
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-030
+  num: 30
+  section: 单选题
+  type: single_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: A
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-031
+  num: 31
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: DE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-032
+  num: 32
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: ACDE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-033
+  num: 33
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: ABDE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-034
+  num: 34
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: ACDE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-035
+  num: 35
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: DE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-036
+  num: 36
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: AB
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-037
+  num: 37
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: CE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-038
+  num: 38
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: ACD
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-039
+  num: 39
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: ACD
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft
+- id: 20-lin5-midterm-040
+  num: 40
+  section: 多选题
+  type: multi_choice
+  stem: （原文为学习通截图，题干未转录）
+  completeness: image_only
+  answer: ACE
+  status: todo
+  note: 答案字母来自原文；需对照截图补录题干与选项后改为 draft

@@ -1,0 +1,102 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 24-nurs-midterm
+  title: 2024级 护理学 药理学 期中
+  cohort: 2024
+  major: 护理学
+  kind: 期中
+  source:
+    title: 考试| 24护理 药理期中
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247488311&idx=1&sn=d13a9d9adfdb7d07c51c5468466e4163&chksm=c2c2609bf5b5e98dd1ab7e50b62717e0a5b44799671c6d062fea0d7f08869804b0f0829bd191
+    published: '2026-05-01'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    score: 6分×3
+    header: 名词解释（6*3）
+  - section: 问答题
+    type: essay
+    score: 2分×8
+    header: 问答题（2*8）
+questions:
+- id: 24-nurs-midterm-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 效价
+  completeness: full
+  answer_ref: [potency]
+  kp: [potency]
+  status: draft-ai
+- id: 24-nurs-midterm-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: 激动药
+  completeness: full
+  answer_ref: [agonist]
+  kp: [agonist]
+  status: draft-ai
+- id: 24-nurs-midterm-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: first-order elimination kinetics的中文名称和含义
+  completeness: full
+  answer_ref: [first_order]
+  analysis: 英文名解：须先写中文“一级消除动力学”，再写含义。
+  kp: [first_order]
+  status: draft-ai
+- id: 24-nurs-midterm-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 稳态血药浓度
+  completeness: full
+  answer_ref: [css]
+  kp: [css]
+  status: draft-ai
+- id: 24-nurs-midterm-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 负荷量
+  completeness: full
+  answer_ref: [loading_dose]
+  kp: [loading_dose]
+  status: draft-ai
+- id: 24-nurs-midterm-006
+  num: 6
+  section: 名词解释
+  type: definition
+  stem: 消除半衰期的含义及其意义
+  completeness: full
+  answer_ref: [half_life]
+  analysis: 本题要求“含义及其意义”，意义部分（给药间隔、达稳态、消除时间、肝肾功能）占一半分数。
+  kp: [half_life]
+  status: draft-ai
+- id: 24-nurs-midterm-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 患者过敏性休克
+  sub: [首选什么药物, 该药物治疗过敏性休克的核心机制]
+  completeness: full
+  answer_ref: [anaphylactic_shock]
+  analysis: （1）肾上腺素；（2）α₁ 收缩血管升压、β₁ 强心、β₂ 扩支气管并抑制介质释放。
+  kp: [anaphylactic_shock, catecholamines]
+  status: draft-ai
+- id: 24-nurs-midterm-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 卡比多巴和左旋多巴联合治疗帕金森
+  sub: [这种治疗方式的体内过程和药理机制, “开-关反应”的临床表现和形成机制]
+  completeness: full
+  answer_ref: [antiparkinson#体内过程与机制, antiparkinson#“开-关反应”]
+  analysis: （1）写外周脱羧问题→卡比多巴不入脑、只抑制外周 AADC；（2）开-关反应的表现与机制（DA 储存缓冲能力下降、浓度波动）。
+  kp: [antiparkinson]
+  status: draft-ai

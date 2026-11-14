@@ -1,0 +1,120 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 22-dent-final
+  title: 2022级 口腔医学 药理学 期末
+  cohort: 2022
+  major: 口腔医学
+  kind: 期末
+  source:
+    title: 考试| 22口腔 药理
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247485597&idx=2&sn=313aa26f92480c81b8f4598cd18b8a71&chksm=c2c27b31f5b5f2275c153e9d393ec710866a40a1932d9aefc932882bfd29ba108de2d0c016af
+    published: '2024-06-26'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    score: 3分×5
+    header: 名词解释（3分*5）
+  - section: 问答题
+    type: essay
+    score: 6分×6
+    header: 大题（6分*6）
+  notes: [全卷20分英文，基本在选择，考药名；选择有A1 A2 X，多选不能错选漏选]
+questions:
+- id: 22-dent-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 激动药
+  completeness: full
+  answer_ref: [agonist]
+  kp: [agonist]
+  status: draft-ai
+- id: 22-dent-final-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: 表观分布容积
+  completeness: full
+  answer_ref: [vd]
+  kp: [vd]
+  status: draft-ai
+- id: 22-dent-final-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 肝药酶诱导剂
+  completeness: full
+  answer_ref: [enzyme_inducer]
+  kp: [enzyme_inducer]
+  status: draft-ai
+- id: 22-dent-final-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 首过消除
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 22-dent-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: tolerance
+  completeness: full
+  answer_ref: [tolerance]
+  kp: [tolerance]
+  status: draft-ai
+- id: 22-dent-final-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: 有机磷中毒解救的两种药和机制
+  completeness: full
+  answer_ref: [op_poisoning#解毒药及机制]
+  analysis: 两种药：阿托品 + 解磷定。
+  kp: [op_poisoning]
+  status: draft-ai
+- id: 22-dent-final-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 氟马西尼的机制和临床应用
+  completeness: full
+  answer_ref: [flumazenil#作用机制, flumazenil#临床应用]
+  analysis: 同 24 口腔缓考。
+  kp: [flumazenil]
+  status: draft-ai
+- id: 22-dent-final-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 硝酸甘油和普萘洛尔联合应用的机制和优缺点
+  completeness: full
+  answer_ref: [nitrate_beta]
+  analysis: 优缺点各 2–3 点。
+  kp: [nitrate_beta]
+  status: draft-ai
+- id: 22-dent-final-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 二甲双胍的作用机制和不良反应，并写出两种口服降糖药
+  completeness: full
+  answer_ref: [oral_hypoglycemics#二甲双胍, oral_hypoglycemics#分类与代表药]
+  analysis: 二甲双胍不刺激胰岛素分泌；乳酸酸中毒必写。
+  kp: [oral_hypoglycemics]
+  status: draft-ai
+- id: 22-dent-final-010
+  num: 10
+  section: 问答题
+  type: essay
+  stem: 阿米卡星产生耳毒性和肾毒性的机制
+  completeness: full
+  answer_ref: [aminoglycosides#毒性与体内过程的关系, aminoglycosides#不良反应]
+  analysis: 原回忆写作“阿卡米星”，应为阿米卡星。
+  kp: [aminoglycosides]
+  status: draft-ai

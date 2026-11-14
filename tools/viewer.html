@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>smart-pharmacology · 真题库浏览器</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2a33;--mute:#6b7680;--line:#e4e1d8;--acc:#1f5f74;--acc2:#e9f2f4;--warn:#a5521b;--warnbg:#fbefe4;--ok:#2f6b3a;--okbg:#e6f1e7}
+@media (prefers-color-scheme:dark){:root{--bg:#141a1e;--card:#1c2429;--ink:#e3e8ea;--mute:#93a0a8;--line:#2d383f;--acc:#7cc2d6;--acc2:#20343b;--warn:#f0a56b;--warnbg:#3a2a1d;--ok:#8fd19b;--okbg:#1f3324}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+header{padding:20px 24px 8px;max-width:1180px;margin:auto}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mute);font-size:13px}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 6px}.stat b{font-size:20px;display:block;color:var(--acc)}.stat{font-size:12px;color:var(--mute)}
+nav{position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav .in{max-width:1180px;margin:auto;padding:0 24px;display:flex;gap:4px;overflow-x:auto}
+nav button{border:0;background:none;color:var(--mute);padding:12px 14px;font-size:15px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+nav button.on{color:var(--ink);border-color:var(--acc);font-weight:600}
+main{max-width:1180px;margin:auto;padding:16px 24px 60px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+input,select{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+input[type=search]{flex:1;min-width:200px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.meta{font-size:12px;color:var(--mute);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;background:var(--acc2);color:var(--acc);cursor:pointer;margin:2px 4px 2px 0;border:0}
+.tag.plain{cursor:default}.draft{background:var(--warnbg);color:var(--warn)}.reviewed,.verified{background:var(--okbg);color:var(--ok)}
+.stem{font-size:16px;margin:6px 0}.subs{margin:2px 0 6px 18px;padding:0}.hint{font-size:13px;color:var(--mute)}
+details summary{cursor:pointer;color:var(--acc);font-size:14px}.ans{margin-top:6px;padding:8px 12px;border-left:3px solid var(--acc);background:var(--acc2);border-radius:4px}
+.grid{display:grid;grid-template-columns:320px 1fr;gap:16px}@media (max-width:820px){.grid{grid-template-columns:1fr}}
+.list{max-height:75vh;overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.li{padding:8px 12px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;justify-content:space-between;gap:8px}.li:hover,.li.on{background:var(--acc2)}
+.li small{color:var(--mute)}.freq{font-variant-numeric:tabular-nums;color:var(--acc);font-weight:600}
+.md h2{font-size:15px;margin:16px 0 6px;color:var(--acc)}.md h3{font-size:14px}.md ul{padding-left:20px;margin:4px 0}.md p{margin:6px 0}
+.md table{border-collapse:collapse;width:100%;font-size:13.5px;margin:8px 0;display:block;overflow-x:auto}.md th,.md td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.md th{background:var(--acc2)}
+.flash{text-align:center;padding:36px 16px}.flash .big{font-size:30px;font-weight:600;letter-spacing:.5px}.flash .back{margin-top:14px;min-height:80px}
+.btn{font:inherit;border:1px solid var(--acc);color:var(--acc);background:none;padding:6px 14px;border-radius:8px;cursor:pointer;margin:4px}.btn.pri{background:var(--acc);color:var(--card)}
+.muted{color:var(--mute)}.warnbox{background:var(--warnbg);color:var(--warn);padding:8px 12px;border-radius:8px;font-size:13px;margin-bottom:12px}
+</style>
+</head>
+<body>
+<header>
+<h1>smart-pharmacology 真题库</h1>
+<div class="sub">来源：B1休息区「fdsy药理学」合集（2018–2024级考题回忆）· 导出于 <span id="built"></span></div>
+<div class="stats" id="stats"></div>
+</header>
+<nav><div class="in" id="tabs"></div></nav>
+<main id="main"></main>
+<script id="db" type="application/json">__DATA__</script>
+<script>
+const D=JSON.parse(document.getElementById('db').textContent);
+const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const STAT={todo:'待写','draft-ai':'AI草稿·待审',draft:'人工草稿',reviewed:'已审',verified:'已核定'};
+$('#built').textContent=D.exported;
+const Q=D.questions, ex=[...new Set(Q.map(q=>q.exam))];
+const kq={};Q.forEach(q=>q.kp.forEach(k=>(kq[k]=kq[k]||new Set()).add(q.exam)));
+const ev=Q.filter(q=>q.evidence.length).length, rv=Q.filter(q=>['reviewed','verified'].includes(q.status)).length;
+$('#stats').innerHTML=[[ex.length,'场考试'],[Q.length,'道题'],[Q.filter(q=>q.answer).length,'有答案'],[ev,'有教材出处'],[rv,'已审'],[Object.keys(D.cards).length,'知识卡'],[D.stems.length,'词干']].map(([n,t])=>`<div class="stat"><b>${n}</b>${t}</div>`).join('');
+function md(src){const L=String(src||'').split('\n'),o=[];let i=0;const inl=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+  while(i<L.length){let l=L[i];
+    if(/^\s*\|/.test(l)){const rows=[];while(i<L.length&&/^\s*\|/.test(L[i]))rows.push(L[i++]);const cells=r=>r.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim());
+      o.push('<table>'+rows.filter((r,j)=>!(j==1&&/^[\s|:-]+$/.test(r))).map((r,j)=>'<tr>'+cells(r).map(c=>j?`<td>${inl(c)}</td>`:`<th>${inl(c)}</th>`).join('')+'</tr>').join('')+'</table>');continue}
+    if(/^#{1,3}\s/.test(l)){o.push(`<h2>${inl(l.replace(/^#+\s/,''))}</h2>`);i++;continue}
+    if(/^\s*[-*]\s/.test(l)){const it=[];while(i<L.length&&/^\s*[-*]\s/.test(L[i]))it.push(L[i++].replace(/^\s*[-*]\s/,''));o.push('<ul>'+it.map(x=>`<li>${inl(x)}</li>`).join('')+'</ul>');continue}
+    if(l.trim())o.push(`<p>${inl(l)}</p>`);i++}
+  return `<div class="md">${o.join('')}</div>`}
+const st=s=>`<span class="tag ${s==='draft-ai'||s==='todo'?'draft':s}">${STAT[s]||s}</span>`;
+const kpTag=k=>D.cards[k]?`<button class="tag" onclick="go('kp','${k}')">${esc(D.cards[k].title)}</button>`:'';
+const TABS={q:'题目',kp:'知识卡（考频）',cmp:'鉴别卡',stem:'构词法',flash:'英文药名闪卡'};
+$('#tabs').innerHTML=Object.entries(TABS).map(([k,v])=>`<button data-t="${k}">${v}</button>`).join('');
+$('#tabs').onclick=e=>{if(e.target.dataset.t)go(e.target.dataset.t)};
+function go(t,arg){document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t==t));try{location.hash=t}catch(e){}
+  ({q:viewQ,kp:viewKP,cmp:viewCmp,stem:viewStem,flash:viewFlash})[t](arg);window.scrollTo(0,0)}
+function qCard(q){return `<div class="card"><div class="meta"><span>${q.cohort}级 · ${esc(q.major)} · ${q.kind}</span><span class="tag plain">${esc(q.type_cn)}</span>${q.lang=='en'?'<span class="tag plain">英文</span>':''}${st(q.status)}<span class="muted">${q.id}</span></div>
+  <div class="stem">${esc(q.stem)}</div>${q.sub.length?'<ol class="subs">'+q.sub.map(s=>`<li>${esc(s)}</li>`).join('')+'</ol>':''}
+  ${Object.entries(q.options).map(([k,v])=>`<div>${k}. ${esc(v)}</div>`).join('')}
+  ${q.recall?`<div class="hint">回忆者括注：${esc(q.recall)}</div>`:''}<div>${q.kp.map(kpTag).join('')}</div>
+  <details><summary>答案与解析</summary><div class="ans">${md(q.answer||'（待写）')}${q.analysis?'<h2>解析</h2>'+md(q.analysis):''}
+  <h2>教材出处</h2>${q.evidence.length?q.evidence.map(e=>`<div class="hint">${esc(e.src)} · ${esc(e.loc)}（${e.status}）${e.quote?'：'+esc(e.quote):''}</div>`).join(''):'<div class="hint">待标注</div>'}</div></details></div>`}
+function viewQ(){const opt=(a,l)=>`<option value="">${l}</option>`+a.map(([v,t])=>`<option value="${v}">${esc(t)}</option>`).join('');
+  const u=k=>[...new Set(Q.map(q=>q[k]))];
+  $('#main').innerHTML=`<div class="warnbox">答案为 AI 草稿（draft-ai）时尚未人工审核；请以教材与授课为准。</div><div class="bar"><input type="search" id="qs" placeholder="搜索题干 / 药名 / 知识点…">
+  <select id="fc">${opt(u('cohort').sort().reverse().map(c=>[c,c+'级']),'全部年级')}</select><select id="fm">${opt(u('major').map(m=>[m,m]),'全部专业')}</select>
+  <select id="ft">${opt(u('type_cn').map(m=>[m,m]),'全部题型')}</select><select id="fs">${opt(Object.entries(STAT),'全部状态')}</select></div><div id="ql"></div>`;
+  const draw=()=>{const s=$('#qs').value.trim().toLowerCase(),c=$('#fc').value,m=$('#fm').value,t=$('#ft').value,z=$('#fs').value;
+    const r=Q.filter(q=>(!c||q.cohort==c)&&(!m||q.major==m)&&(!t||q.type_cn==t)&&(!z||q.status==z)&&(!s||(q.stem+q.sub.join('')+(q.recall||'')+q.kp_titles.join('')+q.drugs.map(d=>d.cn+d.en).join('')).toLowerCase().includes(s)));
+    $('#ql').innerHTML=`<div class="muted">${r.length} 道</div>`+r.slice(0,300).map(qCard).join('')};['#qs','#fc','#fm','#ft','#fs'].forEach(x=>$(x).oninput=draw);draw()}
+function viewKP(sel){const ks=Object.keys(D.cards).sort((a,b)=>((kq[b]||new Set()).size-(kq[a]||new Set()).size));
+  $('#main').innerHTML=`<div class="bar"><input type="search" id="ks" placeholder="搜索知识卡"></div><div class="grid"><div class="list" id="kl"></div><div id="kd"></div></div>`;
+  const list=()=>{const s=$('#ks').value.toLowerCase();$('#kl').innerHTML=ks.filter(k=>!s||D.cards[k].title.toLowerCase().includes(s)).map(k=>`<div class="li ${k==sel?'on':''}" data-id="${k}"><div>${esc(D.cards[k].title)}<br><small>${esc(D.chapters[D.cards[k].chapter].name)}</small></div><div class="freq">${(kq[k]||new Set()).size}</div></div>`).join('')};
+  const det=k=>{const c=D.cards[k],qs=Q.filter(q=>q.kp.includes(k));$('#kd').innerHTML=`<div class="card"><div class="meta">${esc(D.chapters[c.chapter].name)} ${st(c.status)} · 考过 ${(kq[k]||new Set()).size} 场</div>${md(c.body)}</div><h3>历年真题（${qs.length}）</h3>${qs.map(qCard).join('')}`};
+  $('#kl').onclick=e=>{const li=e.target.closest('.li');if(li){sel=li.dataset.id;list();det(sel)}};$('#ks').oninput=list;list();det(sel||ks[0])}
+function viewCmp(sel){const ids=Object.keys(D.compares);$('#main').innerHTML=`<div class="grid"><div class="list" id="cl">${ids.map(c=>`<div class="li" data-id="${c}">${esc(D.compares[c].title)}</div>`).join('')}</div><div id="cd"></div></div>`;
+  const show=c=>{document.querySelectorAll('#cl .li').forEach(l=>l.classList.toggle('on',l.dataset.id==c));$('#cd').innerHTML=`<div class="card">${md(D.compares[c].body)}</div>`};
+  $('#cl').onclick=e=>{const li=e.target.closest('.li');if(li)show(li.dataset.id)};show(sel||ids[0])}
+const ex4={};D.drugs.forEach(d=>D.stems.forEach(s=>{try{if(d.en.toLowerCase().split(/[^a-z]+/).some(w=>new RegExp(s.regex,'i').test(w)))(ex4[s.id]=ex4[s.id]||[]).push(d)}catch(e){}}));
+function viewStem(){$('#main').innerHTML=`<div class="bar"><input type="search" id="ss" placeholder="输入英文药名试试：metoprolol / gentamicin / clozapine"></div><div id="sl"></div>`;
+  const draw=()=>{const s=$('#ss').value.trim().toLowerCase();const hit=st2=>{try{return new RegExp(st2.regex,'i').test(s)}catch(e){return false}};
+    const list=s?D.stems.filter(x=>hit(x)||(x.stem+x.cn+x.cls).toLowerCase().includes(s)):D.stems;
+    $('#sl').innerHTML=list.map(x=>`<div class="card"><b style="font-size:17px">${esc(x.stem)}</b> <span class="tag plain">${esc(x.cn)}</span> <span class="muted">${esc(x.cls)}</span><div class="hint">机制：${esc(x.mechanism)}</div><div class="hint">⚠ ${esc(x.pitfalls)}</div><div>${(ex4[x.id]||[]).map(d=>`<span class="tag plain">${esc(d.cn)} ${esc(d.en)}</span>`).join('')}</div></div>`).join('')};$('#ss').oninput=draw;draw()}
+function viewFlash(){const pool=D.drugs.filter(d=>Object.values(ex4).some(a=>a.includes(d)));let cur,n=0,ok=0;
+  $('#main').innerHTML=`<div class="card flash"><div class="muted">看英文药名：中文名？哪一类？机制？</div><div class="big" id="fn"></div><div class="back" id="fb"></div><button class="btn pri" id="f1">翻面</button><button class="btn" id="f2">会了</button><button class="btn" id="f3">不会</button><div class="muted" id="f4"></div></div>`;
+  const next=()=>{cur=pool[Math.floor(Math.random()*pool.length)];$('#fn').textContent=cur.en;$('#fb').innerHTML=''};
+  $('#f1').onclick=()=>{const ss=D.stems.filter(s=>(ex4[s.id]||[]).includes(cur));$('#fb').innerHTML=`<div style="font-size:20px">${esc(cur.cn)}</div><div>${esc(cur.cls)} ${kpTag(cur.kp)}</div>`+ss.map(s=>`<div class="hint">词干 <b>${esc(s.stem)}</b>（${esc(s.cn)}）：${esc(s.pitfalls)}</div>`).join('')};
+  const m=g=>{n++;ok+=g;$('#f4').textContent=`本轮 ${ok}/${n}`;next()};$('#f2').onclick=()=>m(1);$('#f3').onclick=()=>m(0);next()}
+const h=(location.hash||'').slice(1);go(TABS[h]?h:'q');
+</script>
+</body>
+</html>

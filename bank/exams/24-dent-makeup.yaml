@@ -1,0 +1,108 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 24-dent-makeup
+  title: 2024级 口腔医学 药理学 缓考
+  cohort: 2024
+  major: 口腔医学
+  kind: 缓考
+  source:
+    title: 考试| 24口腔 药理（缓）
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247488989&idx=3&sn=1fac914ea7c56dddb96d1dcec75eda94&chksm=c2c26671f5b5ef676fd8dbd3e6581a52c936572f6157624b2258af57078fc134ab4c93ea4524
+    published: '2026-09-06'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释：
+  - section: 问答题
+    type: essay
+    header: 大题
+  notes: [名词解释均以英文出题]
+questions:
+- id: 24-dent-makeup-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 效能
+  completeness: full
+  answer_ref: [efficacy]
+  kp: [efficacy]
+  status: draft-ai
+- id: 24-dent-makeup-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: 首过消除
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 24-dent-makeup-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 生物利用度
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 24-dent-makeup-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 化疗指数
+  completeness: full
+  answer_ref: [chemotherapeutic_index]
+  kp: [chemotherapeutic_index]
+  status: draft-ai
+- id: 24-dent-makeup-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 拮抗药
+  completeness: full
+  answer_ref: [antagonist]
+  kp: [antagonist]
+  status: draft-ai
+- id: 24-dent-makeup-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: 毛果芸香碱对眼睛的作用机制
+  completeness: full
+  answer_ref: [pilocarpine#作用机制]
+  analysis: 三点：缩瞳、降眼压、调节痉挛，每点都要写出“受体→效应器→结果”。易错：虹膜括约肌是 M 受体，不是 α 受体。
+  kp: [pilocarpine]
+  status: draft-ai
+- id: 24-dent-makeup-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 氟马西尼机制，应用与注意事项
+  completeness: full
+  answer_ref: [flumazenil#作用机制, flumazenil#临床应用, flumazenil#注意事项]
+  analysis: 题目三问：机制 / 应用 / 注意事项。注意事项是失分点：t₁/₂ 短需重复给药、可诱发戒断与惊厥、对巴比妥无效。
+  kp: [flumazenil]
+  status: draft-ai
+- id: 24-dent-makeup-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: ACEI降压保护血管机制
+  completeness: full
+  answer_ref: [raas#ACEI降压机制, raas#器官保护（逆转重构）]
+  analysis: “保护血管”即抑制 AngⅡ 促增生 → 逆转血管重构；要同时写循环 RAAS 与局部 RAAS、缓激肽两条线。
+  kp: [raas]
+  status: draft-ai
+- id: 24-dent-makeup-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 肝素和香豆素类药物区别
+  completeness: topic_only
+  answer_ref: ['cmp:heparin_vs_warfarin']
+  analysis: 鉴别题，建议按“机制、体内外、给药、起效、监测、解救、用途”逐项对比成表。
+  kp: [heparin, coumarins]
+  status: draft-ai

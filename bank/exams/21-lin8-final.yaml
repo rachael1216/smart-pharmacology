@@ -1,0 +1,108 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 21-lin8-final
+  title: 2021级 临床医学（八年制） 药理学 期末
+  cohort: 2021
+  major: 临床医学（八年制）
+  kind: 期末
+  source:
+    title: 考试| 21临八 药理
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247486380&idx=1&sn=eee032a44fe8b4dcd8de4507bc9d0167&chksm=c2c27800f5b5f116d879a0429fe9d9d2ac532dd2d275c49051dc371c19db1e627856fc85645d
+    published: '2024-12-31'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释（全是英文，只考总论）
+  - section: 问答题
+    type: essay
+    header: 大题
+  notes: [题型：单选41题41分（A1 A2 B1），多选8题16分（选不全得一半），名词解释5题15分，简答题4题28分]
+questions:
+- id: 21-lin8-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: 效价强度
+  completeness: full
+  answer_ref: [potency]
+  kp: [potency]
+  status: draft-ai
+- id: 21-lin8-final-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: pA2
+  completeness: full
+  answer_ref: [pA2]
+  kp: [pA2]
+  status: draft-ai
+- id: 21-lin8-final-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 治疗指数
+  completeness: full
+  answer_ref: [therapeutic_index]
+  kp: [therapeutic_index]
+  status: draft-ai
+- id: 21-lin8-final-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 生物利用度
+  completeness: full
+  answer_ref: [bioavailability]
+  kp: [bioavailability]
+  status: draft-ai
+- id: 21-lin8-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 首过消除
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 21-lin8-final-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: ACEI抗心衰原理和机制
+  completeness: full
+  answer_ref: [raas#ACEI抗慢性心衰机制]
+  analysis: 核心是“逆转心室重构”。
+  kp: [raas, heart_failure]
+  status: draft-ai
+- id: 21-lin8-final-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 呋塞米利尿功能和机制
+  completeness: topic_only
+  answer_ref: [loop_diuretics#作用机制, loop_diuretics#临床应用]
+  analysis: “利尿功能”可答利尿特点（高效、近等渗尿、尿钙镁增加）与应用。
+  kp: [loop_diuretics]
+  status: draft-ai
+- id: 21-lin8-final-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 抗血小板药分类并各列举一个
+  completeness: full
+  answer_ref: [antiplatelet#分类]
+  analysis: 每类举一个代表药即可。
+  kp: [antiplatelet]
+  status: draft-ai
+- id: 21-lin8-final-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 列举两个喹诺酮类药物并说明原理
+  completeness: full
+  answer_ref: [quinolones#代表药, quinolones#作用机制]
+  analysis: 同上。
+  kp: [quinolones]
+  status: draft-ai

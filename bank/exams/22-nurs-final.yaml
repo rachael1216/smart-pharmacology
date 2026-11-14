@@ -1,0 +1,107 @@
+# 本文件是真题库正本，可直接编辑。字段说明见 bank/SCHEMA.md；改完运行 python tools/bank.py check
+# 程序写回（annotate.py、bank.py fmt）会保持本格式。
+exam:
+  id: 22-nurs-final
+  title: 2022级 护理学 药理学 期末
+  cohort: 2022
+  major: 护理学
+  kind: 期末
+  source:
+    title: 考试| 22护理 药理学
+    url: https://mp.weixin.qq.com/s?__biz=Mzk0MjQzMzk4Nw==&mid=2247485663&idx=4&sn=f9d9b864710f08ef5ebecfc325b1e65f&chksm=c2c27b73f5b5f26570d4ed4383e758f3a8a2e981cacb01da1f9defb6dac3a9754750fdbf0cd1
+    published: '2024-07-01'
+    account: B1休息区（fdsy药理学合集）
+    license: 原文声明：仅供学习交流，严禁商用
+  format:
+  - section: 名词解释
+    type: definition
+    header: 名词解释
+  - section: 问答题
+    type: essay
+    header: 大题
+questions:
+- id: 22-nurs-final-001
+  num: 1
+  section: 名词解释
+  type: definition
+  stem: efficacy
+  completeness: full
+  answer_ref: [efficacy]
+  kp: [efficacy]
+  status: draft-ai
+- id: 22-nurs-final-002
+  num: 2
+  section: 名词解释
+  type: definition
+  stem: therapeutic index
+  completeness: full
+  answer_ref: [therapeutic_index]
+  kp: [therapeutic_index]
+  status: draft-ai
+- id: 22-nurs-final-003
+  num: 3
+  section: 名词解释
+  type: definition
+  stem: 首过消除
+  completeness: full
+  answer_ref: [first_pass]
+  kp: [first_pass]
+  status: draft-ai
+- id: 22-nurs-final-004
+  num: 4
+  section: 名词解释
+  type: definition
+  stem: 表观分布容积
+  completeness: full
+  answer_ref: [vd]
+  kp: [vd]
+  status: draft-ai
+- id: 22-nurs-final-005
+  num: 5
+  section: 名词解释
+  type: definition
+  stem: 肝药酶抑制剂
+  completeness: full
+  answer_ref: [enzyme_inhibitor]
+  kp: [enzyme_inhibitor]
+  status: draft-ai
+- id: 22-nurs-final-006
+  num: 6
+  section: 问答题
+  type: essay
+  stem: 慢性心衰突发急性肺水肿，用呋塞米的药理作用和机制
+  completeness: full
+  answer_ref: [loop_diuretics#心衰伴肺水肿的意义, loop_diuretics#作用机制]
+  analysis: 同 19 临五大题。
+  kp: [loop_diuretics]
+  status: draft-ai
+- id: 22-nurs-final-007
+  num: 7
+  section: 问答题
+  type: essay
+  stem: 硝苯地平和普萘洛尔合用的优缺点
+  completeness: full
+  answer_ref: [nitrate_beta#展开与鉴别, nitrate_beta#优点]
+  analysis: 硝苯地平 + 普萘洛尔：β 阻断抵消反射性心动过速，硝苯地平抵消冠脉收缩倾向；缺点是降压过度、心功能抑制。
+  kp: [nitrate_beta, ccb, beta_blockers]
+  status: draft-ai
+- id: 22-nurs-final-008
+  num: 8
+  section: 问答题
+  type: essay
+  stem: 胰岛素不良反应和措施
+  completeness: topic_only
+  answer_ref: [insulin#不良反应及措施]
+  analysis: 每种不良反应后写对应措施。
+  kp: [insulin]
+  status: draft-ai
+- id: 22-nurs-final-009
+  num: 9
+  section: 问答题
+  type: essay
+  stem: 氨基糖苷类耳毒性、肾毒性和体内过程有什么关系
+  completeness: full
+  answer_ref: [aminoglycosides#毒性与体内过程的关系]
+  analysis: 本题难点：把“内耳淋巴液蓄积、近曲小管胞饮蓄积、原形经肾排泄”与毒性联系起来。
+  kp: [aminoglycosides]
+  status: draft-ai
